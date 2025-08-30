@@ -1,0 +1,59 @@
+# VM Feature Collector Configuration
+
+# Collection settings
+collection:
+  interval: 1.0  # Collection interval in seconds
+  synchronized: true  # Use synchronized bracketed window collection
+  max_retries: 3  # Maximum retries for failed metric collection
+  
+# Target zones for power prediction
+target_zones:
+  - package
+  - core
+
+# Kepler integration
+kepler:
+  enabled: true
+  url: "http://localhost:28282/metrics"
+  timeout: 5  # Timeout in seconds
+  
+# Performance counters
+pmc:
+  enabled: true
+  events:
+    - cpu-cycles
+    - instructions  
+    - cache-references
+    - cache-misses
+    - branches
+    - branch-misses
+    - page-faults
+    - context-switches
+
+# Output settings
+output:
+  format: ["json", "csv"]  # Supported formats: json, csv, pickle
+  base_path: "data"
+  compression: false
+  
+# Logging configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/vm_feature_collection.log"
+  console: true
+  
+# VM metadata
+vm:
+  auto_detect_hostname: true
+  custom_metadata: {}  # Additional metadata to include
+
+# Feature engineering
+features:
+  derive_ratios: true  # Calculate derived features like IPC, cache miss ratio
+  include_efficiency_metrics: true  # Include CPU efficiency calculations
+  
+# System monitoring
+monitoring:
+  check_perf_permissions: true
+  warn_on_missing_counters: true
+  validate_kepler_access: true

@@ -1,0 +1,82 @@
+# VM Feature Collector - Git Ignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Data files
+data/
+*.json
+*.csv
+*.pkl
+*.pickle
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS generated files
+Thumbs.db
+.Trash-*
+
+# Test coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Documentation builds
+docs/_build/
+
+# Local configuration overrides
+local_config.yaml
+.env.local
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Performance data
+perf.data*
+
+# Backup files
+*.bak
+*.backup

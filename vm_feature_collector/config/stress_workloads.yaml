@@ -1,0 +1,247 @@
+# Stress Workload Configurations for VM Feature Collector
+# These configurations define various stress patterns to generate different
+# CPU utilization levels and computational patterns during feature collection
+
+# Default stress-ng configuration
+stress_ng:
+  timeout_buffer: 2  # Extra seconds added to stress timeout
+  cleanup_wait: 2    # Seconds to wait after cleanup
+  quiet_mode: true   # Use --quiet flag with stress-ng commands
+
+# CPU Load Cycling Configuration
+cpu_cycling:
+  description: "CPU load cycling from 0% to 100% and back down with multiple cycles"
+  cycle_duration: 60      # Total time for one complete cycle (0->100->0) in seconds
+  step_duration: 2        # Duration for each load step in seconds
+  max_load: 100          # Maximum CPU load percentage
+  step_size: 5           # Load increment/decrement step
+  num_workers_divisor: 2  # Use num_cpus // this value for workers
+  
+# Workload Pattern Definitions
+workloads:
+  none:
+    description: "No stress workload - system at natural load"
+    enabled: true
+    commands: []
+    
+  idle:
+    description: "Explicitly idle system - no additional load"
+    enabled: true
+    commands: []
+    
+  cpu_cycling:
+    description: "CPU load cycling from 0% to 100% and back down"
+    enabled: true
+    special_handler: "cpu_cycling"  # Uses special cycling logic
+    
+  cpu_intensive:
+    description: "High CPU utilization with various computational patterns"
+    enabled: true
+    commands:
+      - type: cpu
+        workers: 10
+        method: prime
+        description: "Prime number computation"
+      - type: cpu
+        workers: 8
+        method: matrixprod
+        description: "Matrix multiplication operations"
+      - type: cpu
+        workers: 8
+        method: int64
+        description: "64-bit integer arithmetic"
+        
+  memory_intensive:
+    description: "Memory allocation and access patterns"
+    enabled: true
+    commands:
+      - type: vm
+        workers: 2
+        vm-bytes: "2G"
+        vm-method: flip
+        description: "Large memory allocation with random access"
+      - type: vm
+        workers: 2
+        vm-bytes: "1G"
+        vm-method: sequential
+        description: "Sequential memory access patterns"
+      - type: memcpy
+        workers: 2
+        memcpy-bytes: "512M"
+        description: "Memory copying operations"
+      - type: cache
+        workers: 1
+        cache-size: "32M"
+        description: "Cache thrashing patterns"
+        
+  mixed_workload:
+    description: "Combination of CPU, memory, and I/O stress"
+    enabled: true
+    commands:
+      - type: cpu
+        workers: 8
+        method: prime
+        description: "CPU computation"
+      - type: vm
+        workers: 1
+        vm-bytes: "1G"
+        vm-method: random
+        description: "Random memory access"
+      - type: io
+        workers: 2
+        io-ops: 500
+        description: "I/O operations"
+      - type: switch
+        workers: 4
+        description: "Context switching stress"
+        
+  bursty_workload:
+    description: "Alternating high and low activity patterns"
+    enabled: true
+    special_handler: "bursty"
+    bursty_config:
+      cycle_duration: 30      # Total cycle time in seconds
+      high_load_duration: 15  # High load phase duration
+      low_load_duration: 15   # Low load (idle) phase duration
+      high_load_commands:
+        - type: cpu
+          workers: 4
+          method: prime
+        - type: vm
+          workers: 1
+          vm-bytes: "512M"
+          
+  matrix_computation:
+    description: "Matrix multiplication and linear algebra operations"
+    enabled: true
+    commands:
+      - type: cpu
+        workers: auto  # Will use all available CPUs
+        method: matrixprod
+        description: "Matrix multiplication"
+      - type: cpu
+        workers: auto_half  # Will use half of available CPUs
+        method: fft
+        description: "Fast Fourier Transform"
+        
+  branch_intensive:
+    description: "Branch prediction and conditional logic stress"
+    enabled: true
+    commands:
+      - type: cpu
+        workers: auto
+        method: branch
+        description: "Branch prediction stress"
+      - type: cpu
+        workers: auto_half
+        method: crc16
+        description: "CRC calculation with branches"
+        
+  cache_thrashing:
+    description: "Cache miss patterns and memory hierarchy stress"
+    enabled: true
+    commands:
+      - type: cache
+        workers: auto
+        cache-size: "64M"
+        description: "L3 cache thrashing"
+      - type: vm
+        workers: 2
+        vm-bytes: "4G"
+        vm-method: flip
+        description: "Large memory allocations"
+        
+  io_intensive:
+    description: "Disk and file I/O operations"
+    enabled: true
+    commands:
+      - type: io
+        workers: 4
+        io-ops: 1000
+        description: "General I/O operations"
+      - type: hdd
+        workers: 2
+        hdd-bytes: "1G"
+        description: "Disk write operations"
+      - type: dir
+        workers: 2
+        dir-dirs: 1024
+        description: "Directory operations"
+        
+  network_simulation:
+    description: "Network I/O simulation (requires network access)"
+    enabled: false  # Disabled by default as it requires network
+    special_handler: "network"
+    
+  floating_point:
+    description: "Floating point arithmetic intensive workload"
+    enabled: true
+    commands:
+      - type: cpu
+        workers: auto
+        method: float
+        description: "Floating point operations"
+      - type: cpu
+        workers: auto_half
+        method: double
+        description: "Double precision floating point"
+        
+  vector_operations:
+    description: "Vector and SIMD operations"
+    enabled: true
+    commands:
+      - type: cpu
+        workers: auto
+        method: vector
+        description: "Vector operations"
+      - type: cpu
+        workers: auto_half
+        method: sse
+        description: "SSE vector instructions"
+
+# Workload sequences for comprehensive testing
+sequences:
+  comprehensive:
+    description: "Run all enabled workloads sequentially"
+    workloads:
+      - idle
+      - cpu_intensive
+      - memory_intensive
+      - mixed_workload
+      - bursty_workload
+      - matrix_computation
+    duration_per_workload: 300  # 5 minutes each
+    cooldown_between: 10        # 10 seconds between workloads
+    
+  cpu_focused:
+    description: "CPU-focused workload sequence"
+    workloads:
+      - cpu_cycling
+      - cpu_intensive
+      - matrix_computation
+      - branch_intensive
+    duration_per_workload: 600  # 10 minutes each
+    cooldown_between: 5
+    
+  memory_focused:
+    description: "Memory-focused workload sequence"
+    workloads:
+      - memory_intensive
+      - cache_thrashing
+      - mixed_workload
+    duration_per_workload: 900  # 15 minutes each
+    cooldown_between: 10
+
+# Validation settings
+validation:
+  check_stress_ng: true      # Verify stress-ng is available
+  check_permissions: true    # Check perf counter permissions
+  warn_on_missing: true      # Warn if stress-ng is not found
+  max_load_warning: 80       # Warn if system load exceeds this value before starting
+
+# Safety limits
+safety:
+  max_workers_per_command: 32  # Maximum workers for any single stress command
+  max_memory_per_worker: "8G"  # Maximum memory allocation per worker
+  thermal_throttle_check: false  # Check for thermal throttling (requires sensors)
+  auto_stop_on_overheat: false   # Auto-stop if temperature too high
