@@ -316,8 +316,14 @@ class VMFeatureCollector:
             
             if prev_cpu and curr_cpu:
                 # Calculate deltas in jiffies, then convert to seconds
-                # Most systems use USER_HZ=100 (100 jiffies per second)
-                jiffies_per_second = 100  # Standard USER_HZ value
+                # Get the actual system clock ticks per second
+                try:
+                    import os
+                    jiffies_per_second = os.sysconf(os.sysconf_names['SC_CLK_TCK'])
+                except (KeyError, AttributeError, OSError):
+                    # Fallback to standard value if sysconf fails
+                    jiffies_per_second = 100  # Standard USER_HZ value
+                    logger.debug("Could not determine system clock ticks, using default 100 Hz")
                 
                 cpu_deltas = {}
                 total_delta = 0
@@ -337,14 +343,18 @@ class VMFeatureCollector:
                 
                 # Calculate CPU utilization as a percentage
                 if total_delta > 0:
-                    deltas['sys_cpu_utilization'] = ((total_delta - cpu_deltas['idle'] * jiffies_per_second) / total_delta) * 100.0
+                    # total_delta is already in jiffies, cpu_deltas['idle'] is in seconds
+                    idle_jiffies = cpu_deltas['idle'] * jiffies_per_second
+                    active_jiffies = total_delta - idle_jiffies
+                    deltas['sys_cpu_utilization'] = (active_jiffies / total_delta) * 100.0
                 else:
                     deltas['sys_cpu_utilization'] = 0.0
                     
                 # Store individual CPU time percentages for compatibility
                 if total_delta > 0:
                     for field in ['user', 'nice', 'system', 'idle', 'iowait', 'irq', 'softirq', 'steal']:
-                        percentage = (cpu_deltas[field] * jiffies_per_second / total_delta) * 100.0
+                        field_jiffies = cpu_deltas[field] * jiffies_per_second
+                        percentage = (field_jiffies / total_delta) * 100.0
                         deltas[f'sys_cpu_{field}_percent'] = percentage
             
             # Context switches delta
@@ -616,6 +626,13 @@ class VMFeatureCollector:
                 
                 # PMCs over the exact window [T0, T1]
                 pmc_data = self.collect_pmc_metrics()
+                
+                # Ensure we always wait for the collection interval, even if PMCs fail
+                t_after_pmc = time.time()
+                elapsed = t_after_pmc - t0
+                if elapsed < self.collection_interval:
+                    remaining_sleep = self.collection_interval - elapsed
+                    time.sleep(remaining_sleep)
                 
                 # T1 snapshots
                 t1 = time.time()
