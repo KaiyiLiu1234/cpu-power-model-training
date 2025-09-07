@@ -60,7 +60,8 @@ logger = logging.getLogger(__name__)
 @dataclass
 class PowerDataPoint:
     """Single power measurement data point for training labels"""
-    timestamp: float
+    timestamp: float  # Relative timestamp from collection start
+    timestamp_absolute: float  # Absolute system timestamp for reference
     timestamp_iso: str
     
     # Core power metrics (labels for training)
@@ -95,6 +96,9 @@ class BaremetalPowerCollector:
         # Data storage
         self.power_data: List[PowerDataPoint] = []
         self.collection_active = False
+        
+        # Relative timing
+        self.collection_start_time: Optional[float] = None
         
         # Signal handling for graceful shutdown
         self._shutdown_requested = False
@@ -231,6 +235,14 @@ class BaremetalPowerCollector:
                 
                 # Create timestamp
                 timestamp = time.time()
+                
+                # Initialize collection start time on first measurement
+                if self.collection_start_time is None:
+                    self.collection_start_time = timestamp
+                    logger.info(f"BM collection started at absolute time: {timestamp:.6f}")
+                
+                # Calculate relative timestamp from collection start
+                relative_timestamp = timestamp - self.collection_start_time
                 timestamp_iso = datetime.fromtimestamp(timestamp).isoformat()
                 
                 # Combine VM data for storage
@@ -246,7 +258,8 @@ class BaremetalPowerCollector:
                 
                 # Create data point
                 data_point = PowerDataPoint(
-                    timestamp=timestamp,
+                    timestamp=relative_timestamp,  # Relative timestamp for merging
+                    timestamp_absolute=timestamp,  # Absolute timestamp for reference
                     timestamp_iso=timestamp_iso,
                     total_cpu_watts_core=total_core_watts,
                     total_cpu_watts_package=total_package_watts,

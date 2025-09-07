@@ -54,7 +54,8 @@ logger = logging.getLogger(__name__)
 @dataclass
 class VMFeaturePoint:
     """Single VM feature data point for power prediction"""
-    timestamp: float
+    timestamp: float  # Relative timestamp from collection start
+    timestamp_absolute: float  # Absolute system timestamp for reference
     timestamp_iso: str
     
     # VM-compatible PMC features (inputs for prediction)
@@ -136,6 +137,9 @@ class VMFeatureCollector:
         # Data storage
         self.feature_data: List[VMFeaturePoint] = []
         self.collection_active = False
+        
+        # Relative timing
+        self.collection_start_time: Optional[float] = None
         
         # Performance counter availability
         self.available_pmcs = self._check_pmc_availability()
@@ -655,12 +659,19 @@ class VMFeatureCollector:
                 # Derived features from PMCs
                 derived_data = self.calculate_derived_features(pmc_data, aligned_os)
                 
-                # Create timestamp in ISO format for external synchronization
+                # Initialize collection start time on first measurement
+                if self.collection_start_time is None:
+                    self.collection_start_time = t1
+                    logger.info(f"VM collection started at absolute time: {t1:.6f}")
+                
+                # Calculate relative timestamp from collection start
+                relative_timestamp = t1 - self.collection_start_time
                 timestamp_iso = datetime.fromtimestamp(t1).isoformat()
                 
-                # Compose feature point (timestamp at T1)
+                # Compose feature point (using relative timestamp)
                 point = VMFeaturePoint(
-                    timestamp=t1,
+                    timestamp=relative_timestamp,  # Relative timestamp for merging
+                    timestamp_absolute=t1,         # Absolute timestamp for reference
                     timestamp_iso=timestamp_iso,
                     # System-level CPU metrics from /proc/stat (delta during interval)
                     sys_cpu_user_seconds=system_deltas.get('sys_cpu_user_seconds', 0.0),
@@ -715,6 +726,14 @@ class VMFeatureCollector:
             else:
                 # Non-synchronized collection (legacy)
                 timestamp = time.time()
+                
+                # Initialize collection start time on first measurement
+                if self.collection_start_time is None:
+                    self.collection_start_time = timestamp
+                    logger.info(f"VM collection started at absolute time: {timestamp:.6f}")
+                
+                # Calculate relative timestamp from collection start
+                relative_timestamp = timestamp - self.collection_start_time
                 timestamp_iso = datetime.fromtimestamp(timestamp).isoformat()
                 
                 # Get current /proc/stat snapshot
@@ -734,7 +753,8 @@ class VMFeatureCollector:
                 derived_data = self.calculate_derived_features(pmc_data, os_data)
                 
                 point = VMFeaturePoint(
-                    timestamp=timestamp,
+                    timestamp=relative_timestamp,  # Relative timestamp for merging
+                    timestamp_absolute=timestamp,  # Absolute timestamp for reference
                     timestamp_iso=timestamp_iso,
                     # System-level CPU metrics from /proc/stat
                     sys_cpu_user_seconds=system_deltas.get('sys_cpu_user_seconds', 0.0),
