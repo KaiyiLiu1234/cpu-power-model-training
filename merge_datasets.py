@@ -60,6 +60,8 @@ class MergeStatistics:
     time_range_bm: Tuple[float, float] = (0.0, 0.0)
     time_range_merged: Tuple[float, float] = (0.0, 0.0)
     power_range: Tuple[float, float] = (0.0, 0.0)
+    power_range_core: Tuple[float, float] = (0.0, 0.0)
+    power_range_package: Tuple[float, float] = (0.0, 0.0)
     average_time_diff: float = 0.0
     max_time_diff: float = 0.0
 
@@ -74,7 +76,8 @@ class DatasetMerger:
         Args:
             time_tolerance: Maximum time difference in seconds to consider a match
             min_power_threshold: Minimum power value to include (filters noise)
-            power_zone: Which power zone to use as label ('core' or 'package')
+            power_zone: Which power zone to use for filtering threshold ('core' or 'package')
+                       Note: Both power zones will be included in merged data
         """
         self.time_tolerance = time_tolerance
         self.min_power_threshold = min_power_threshold
@@ -218,9 +221,11 @@ class DatasetMerger:
                     # Create merged data point
                     merged_point = vm_point.copy()  # Start with all VM features
                     
-                    # Add power labels
-                    merged_point['power_watts'] = power_value
-                    merged_point['power_zone'] = self.power_zone
+                    # Add all power metrics
+                    merged_point['power_watts_core'] = power_point.get('total_cpu_watts_core', 0.0)
+                    merged_point['power_watts_package'] = power_point.get('total_cpu_watts_package', 0.0)
+                    merged_point['power_watts'] = power_value  # For backward compatibility
+                    merged_point['power_zone_threshold'] = self.power_zone  # Which zone was used for threshold
                     merged_point['bm_timestamp'] = power_point['timestamp']
                     merged_point['time_diff'] = abs(vm_timestamp - power_point['timestamp'])
                     
@@ -255,6 +260,13 @@ class DatasetMerger:
         
         if power_values:
             self.statistics.power_range = (np.min(power_values), np.max(power_values))
+            
+            # Also track ranges for both power zones
+            if self.merged_data:
+                core_values = [p['power_watts_core'] for p in self.merged_data]
+                package_values = [p['power_watts_package'] for p in self.merged_data]
+                self.statistics.power_range_core = (np.min(core_values), np.max(core_values))
+                self.statistics.power_range_package = (np.min(package_values), np.max(package_values))
         
         if self.merged_data:
             merged_timestamps = [p['timestamp'] for p in self.merged_data]
@@ -326,7 +338,7 @@ class DatasetMerger:
             df = pd.DataFrame(self.merged_data)
             
             # Reorder columns to put important ones first
-            important_cols = ['timestamp', 'timestamp_iso', 'power_watts', 'time_diff']
+            important_cols = ['timestamp', 'timestamp_iso', 'power_watts_core', 'power_watts_package', 'power_watts', 'time_diff']
             feature_cols = [col for col in df.columns if col.startswith(('cpu_', 'memory_', 'disk_', 'network_', 'process_count', 'load_average', 'instructions_', 'cache_', 'branch_', 'sys_'))]
             metadata_cols = [col for col in df.columns if col not in important_cols + feature_cols]
             
@@ -395,8 +407,12 @@ class DatasetMerger:
             print(f"  Time Tolerance Used: {self.time_tolerance}s")
             
             print(f"\nPower Label Statistics:")
-            print(f"  Power Zone: {self.power_zone}")
-            print(f"  Power Range: {self.statistics.power_range[0]:.6f}W - {self.statistics.power_range[1]:.6f}W")
+            print(f"  Threshold Zone: {self.power_zone}")
+            print(f"  Threshold Zone Range: {self.statistics.power_range[0]:.6f}W - {self.statistics.power_range[1]:.6f}W")
+            if hasattr(self.statistics, 'power_range_core'):
+                print(f"  Core Power Range: {self.statistics.power_range_core[0]:.6f}W - {self.statistics.power_range_core[1]:.6f}W")
+            if hasattr(self.statistics, 'power_range_package'):
+                print(f"  Package Power Range: {self.statistics.power_range_package[0]:.6f}W - {self.statistics.power_range_package[1]:.6f}W")
             print(f"  Min Power Threshold: {self.min_power_threshold}W")
             
             if self.statistics.time_range_merged[0] > 0:
@@ -440,7 +456,7 @@ def main():
     parser.add_argument('--min-power-threshold', type=float, default=0.0,
                        help='Minimum power value to include (watts, default: 0.0)')
     parser.add_argument('--power-zone', type=str, default='core', choices=['core', 'package'],
-                       help='Power zone to use as label (default: core)')
+                       help='Power zone to use for threshold filtering (default: core). Note: Both core and package power will be included in output.')
     parser.add_argument('--no-metadata', action='store_true',
                        help='Exclude metadata from output files')
     parser.add_argument('--verbose', action='store_true',

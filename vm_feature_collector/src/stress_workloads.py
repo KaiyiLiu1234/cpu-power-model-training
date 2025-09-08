@@ -297,33 +297,65 @@ class StressWorkloadRunner:
         actual_duration = time.time() - start_time
         logger.info(f"CPU intensive workload completed ({actual_duration:.1f} seconds, {len(stress_methods)} methods)")
     
-    def run_workload_sequence(self, workload_list: List[str], cpu_intensive_duration: int = 60):
-        """Run a sequence of workloads sequentially"""
-        logger.info(f"Starting workload sequence: {', '.join(workload_list)}")
+    def run_workload_sequence(self, workload_list: List[str], cpu_intensive_duration: int = 60, total_duration: int = None):
+        """Run a sequence of workloads, looping until total_duration is reached"""
+        if total_duration:
+            logger.info(f"Starting workload sequence: {', '.join(workload_list)} - looping for {total_duration} seconds")
+        else:
+            logger.info(f"Starting workload sequence: {', '.join(workload_list)} - single run")
+            
         start_time = time.time()
+        cycle_count = 0
         
-        for i, workload_name in enumerate(workload_list):
-            if not self.running:
+        while self.running:
+            cycle_count += 1
+            cycle_start = time.time()
+            
+            # Check if we've reached total duration before starting new cycle
+            if total_duration and (time.time() - start_time) >= total_duration:
                 break
                 
-            if workload_name not in self.workload_configs:
-                logger.error(f"Unknown workload: {workload_name}")
-                continue
+            logger.info(f"Starting workload cycle {cycle_count}")
             
-            logger.info(f"Running workload {i+1}/{len(workload_list)}: {workload_name}")
+            for i, workload_name in enumerate(workload_list):
+                if not self.running:
+                    break
+                    
+                # Check duration before each workload
+                if total_duration and (time.time() - start_time) >= total_duration:
+                    logger.info(f"Total duration reached during cycle {cycle_count}, stopping")
+                    break
+                    
+                if workload_name not in self.workload_configs:
+                    logger.error(f"Unknown workload: {workload_name}")
+                    continue
+                
+                logger.info(f"Running workload {i+1}/{len(workload_list)}: {workload_name}")
+                
+                if workload_name == "cycle":
+                    self.run_cycle_workload()
+                elif workload_name == "cpu_intensive":
+                    self.run_cpu_intensive_workload(cpu_intensive_duration)
+                
+                # Brief pause between workloads
+                if i < len(workload_list) - 1 and self.running:
+                    logger.info("Pausing 3 seconds between workloads...")
+                    time.sleep(3)
             
-            if workload_name == "cycle":
-                self.run_cycle_workload()
-            elif workload_name == "cpu_intensive":
-                self.run_cpu_intensive_workload(cpu_intensive_duration)
+            cycle_duration = time.time() - cycle_start
+            logger.info(f"Workload cycle {cycle_count} completed in {cycle_duration:.1f} seconds")
             
-            # Brief pause between workloads
-            if i < len(workload_list) - 1 and self.running:
-                logger.info("Pausing 3 seconds between workloads...")
-                time.sleep(3)
+            # If no total duration specified, run only once
+            if not total_duration:
+                break
+                
+            # Brief pause between cycles if continuing
+            if self.running and total_duration and (time.time() - start_time) < total_duration:
+                logger.info("Pausing 5 seconds between cycles...")
+                time.sleep(5)
         
-        total_duration = time.time() - start_time
-        logger.info(f"Workload sequence completed in {total_duration:.1f} seconds")
+        total_elapsed = time.time() - start_time
+        logger.info(f"Workload sequence completed: {cycle_count} cycles in {total_elapsed:.1f} seconds")
     
     def list_available_workloads(self):
         """List all available workloads"""
@@ -350,6 +382,8 @@ def main():
                        help='Comma-separated list of workloads to run (e.g., "cycle,cpu_intensive,cycle")')
     parser.add_argument('--cpu-intensive-duration', type=int, default=60,
                        help='Duration for cpu_intensive workload in seconds (default: 60)')
+    parser.add_argument('--total-duration', type=int,
+                       help='Total duration to run workloads (loops sequence until duration met)')
     parser.add_argument('--list', action='store_true',
                        help='List available workloads and exit')
     parser.add_argument('--system-info', action='store_true',
@@ -382,7 +416,7 @@ def main():
         sys.exit(1)
     
     try:
-        runner.run_workload_sequence(workload_list, args.cpu_intensive_duration)
+        runner.run_workload_sequence(workload_list, args.cpu_intensive_duration, args.total_duration)
     except KeyboardInterrupt:
         logger.info("Interrupted by user")
     except Exception as e:

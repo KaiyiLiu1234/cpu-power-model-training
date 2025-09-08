@@ -204,14 +204,18 @@ class TrainingDataOrchestrator:
             logger.error(f"Failed to verify VM project structure: {e}")
             return False
     
-    def start_vm_stress_workloads(self, workloads: List[str], cpu_intensive_duration: int = 120) -> bool:
+    def start_vm_stress_workloads(self, workloads: List[str], cpu_intensive_duration: int = 120, total_duration: int = None) -> bool:
         """Start stress workloads on VM"""
         try:
             workload_str = ",".join(workloads)
             stress_cmd = (f"python3 vm_feature_collector/src/stress_workloads.py "
                          f"--workloads {workload_str} --cpu-intensive-duration {cpu_intensive_duration}")
             
-            logger.info(f"Starting VM stress workloads: {workload_str}")
+            # Add total duration if specified (stress workloads should run longer than collectors)
+            if total_duration:
+                stress_cmd += f" --total-duration {total_duration}"
+            
+            logger.info(f"Starting VM stress workloads: {workload_str} for {total_duration}s")
             self.vm_stress_process = self._execute_vm_command(stress_cmd, background=True)
             return True
             
@@ -239,7 +243,7 @@ class TrainingDataOrchestrator:
             power_cmd = [
                 "python3", "bm_power_collector.py",
                 "--duration", str(duration),
-                "--interval", str(self.interval),  # Now uses relative timestamps
+                "--interval", str(self.interval),
                 "--vm-names", self.vm_name,
                 "--kepler-url", self.kepler_url,
                 "--output", output_file,
@@ -347,45 +351,27 @@ class TrainingDataOrchestrator:
             self._execute_vm_command("mkdir -p data")
             
             # 4. Start VM stress workloads first (they run continuously)
-            if not self.start_vm_stress_workloads(workloads, cpu_intensive_duration):
+            # Give stress workloads extra time to ensure they outlast collectors
+            stress_duration = duration + 10  # Extra 60 seconds
+            if not self.start_vm_stress_workloads(workloads, cpu_intensive_duration, stress_duration):
                 raise RuntimeError("Failed to start VM stress workloads")
             
-            # 5. Wait a moment for stress workloads to initialize
-            logger.info("Waiting 5 seconds for stress workloads to initialize...")
-            time.sleep(5)
-            
-            # 6. Start both collections simultaneously
-            logger.info("Starting synchronized data collection...")
+            # 5. Start all three processes simultaneously as background processes
+            logger.info("Starting all collection processes simultaneously...")
             
             # Start VM feature collection
             if not self.start_vm_feature_collection(duration, vm_features_file):
                 raise RuntimeError("Failed to start VM feature collection")
             
-            # Start baremetal power collection immediately for synchronization
+            # Start baremetal power collection
             if not self.start_baremetal_power_collection(duration, bm_power_file):
                 raise RuntimeError("Failed to start baremetal power collection")
             
-            # 7. Monitor collection progress
-            start_time = time.time()
-            while self.collection_active and (time.time() - start_time) < duration + 30:  # Extra 30s buffer
-                if self._shutdown_requested:
-                    break
-                
-                elapsed = time.time() - start_time
-                remaining = max(0, duration - elapsed)
-                
-                if elapsed > 0 and elapsed % 60 < 1:  # Log every minute
-                    logger.info(f"Collection progress: {elapsed:.0f}s elapsed, {remaining:.0f}s remaining")
-                
-                time.sleep(5)
+            logger.info(f"All processes started - they will run for {duration}s and finish automatically")
             
-            # 8. Stop all processes
-            logger.info("Stopping all collection processes...")
-            self._stop_vm_processes()
-            self._stop_baremetal_collection()
-            
-            # Wait a moment for processes to finish writing
-            time.sleep(3)
+            # Wait for baremetal process to complete (it will finish when done)
+            if self.bm_power_process:
+                self.bm_power_process.wait()
             
             # 9. Copy VM data to local machine
             logger.info("Copying VM data to local machine...")
