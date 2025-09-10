@@ -377,15 +377,22 @@ class TrainingDataOrchestrator:
             # wait 
             time.sleep(stress_duration)
             
-            # 9. Copy VM data to local machine
+            # 9. Copy VM data to local machine (both JSON and CSV)
             logger.info("Copying VM data to local machine...")
             if not self.copy_vm_data(vm_features_file, local_vm_features_file):
-                raise RuntimeError("Failed to copy VM feature data")
+                raise RuntimeError("Failed to copy VM feature JSON data")
+            
+            # Also copy the CSV file
+            vm_features_csv = vm_features_file.replace('.json', '.csv')
+            local_vm_features_csv = local_vm_features_file.replace('.json', '.csv')
+            if not self.copy_vm_data(vm_features_csv, local_vm_features_csv):
+                raise RuntimeError("Failed to copy VM feature CSV data")
             
             logger.info("Data collection orchestration completed successfully")
             
             return {
                 'vm_features_file': local_vm_features_file,
+                'vm_features_csv_file': local_vm_features_csv,
                 'bm_power_file': bm_power_file,
                 'duration': duration,
                 'workloads': workloads,
@@ -466,7 +473,8 @@ def main():
         logger.info("="*60)
         logger.info("COLLECTION COMPLETED SUCCESSFULLY")
         logger.info("="*60)
-        logger.info(f"VM Features: {result['vm_features_file']}")
+        logger.info(f"VM Features JSON: {result['vm_features_file']}")
+        logger.info(f"VM Features CSV: {result['vm_features_csv_file']}")
         logger.info(f"BM Power: {result['bm_power_file']}")
         logger.info(f"Timestamp: {result['timestamp']}")
         logger.info("Next step: Run merge_datasets.py to combine the data")

@@ -117,11 +117,6 @@ class VMFeaturePoint:
     collection_interval: float = 1.0
     time_delta_seconds: float = 0.0
     vm_hostname: str = ""
-    target_zones: List[str] = None  # ["package", "core"]
-    
-    def __post_init__(self):
-        if self.target_zones is None:
-            self.target_zones = ["package", "core"]
 
 class VMFeatureCollector:
     """Collects VM features for CPU power prediction"""
@@ -873,7 +868,6 @@ class VMFeatureCollector:
     def collect_vm_features(self, duration: int, output_file: str = None) -> List[VMFeaturePoint]:
         """Collect VM features for specified duration"""
         logger.info(f"Starting VM feature collection for {duration} seconds on {self.vm_hostname}")
-        logger.info(f"Target zones: package, core")
         
         
         self.collection_active = True
