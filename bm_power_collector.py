@@ -86,12 +86,13 @@ class BaremetalPowerCollector:
     
     def __init__(self, kepler_url="http://localhost:28283/metrics", 
                  collection_interval=0.1, max_retries=3,
-                 target_vms=None, vm_pattern=None):
+                 target_vms=None, vm_pattern=None, sync_start_time=None):
         self.kepler_url = kepler_url
         self.collection_interval = collection_interval
         self.max_retries = max_retries
         self.target_vms = set(target_vms) if target_vms else None
         self.vm_pattern = re.compile(vm_pattern) if vm_pattern else None
+        self.sync_start_time = sync_start_time
         
         # Data storage
         self.power_data: List[PowerDataPoint] = []
@@ -128,6 +129,25 @@ class BaremetalPowerCollector:
         self._shutdown_requested = True
         self.collection_active = False
         logger.info("Shutdown initiated - press Ctrl+C again to force quit")
+    
+    def _wait_for_sync_start(self) -> float:
+        """Wait for synchronized start time and return the exact start time"""
+        if self.sync_start_time is None:
+            # No sync time specified, start immediately
+            start_time = time.time()
+            logger.info(f"Starting collection immediately at: {start_time:.6f}")
+        else:
+            current_time = time.time()
+            if current_time < self.sync_start_time:
+                sleep_duration = self.sync_start_time - current_time
+                logger.info(f"Waiting {sleep_duration:.3f}s for synchronized start at: {self.sync_start_time:.6f}")
+                time.sleep(sleep_duration)
+            else:
+                logger.warning(f"Sync time {self.sync_start_time:.6f} has already passed, starting immediately")
+            start_time = self.sync_start_time
+        
+        self.collection_start_time = start_time
+        return start_time
     
     def _parse_vm_metrics(self, kepler_response: str) -> Dict[str, List[Dict]]:
         """Parse Kepler metrics response to extract VM power data
@@ -293,32 +313,120 @@ class BaremetalPowerCollector:
         
         return None
     
+    def collect_power_metrics_with_timestamp(self, target_timestamp: float) -> Optional[PowerDataPoint]:
+        """Collect power metrics with a specific timestamp for precise timing"""
+        for attempt in range(self.max_retries):
+            try:
+                # Use session for connection reuse and shorter timeout to reduce latency
+                response = self.session.get(self.kepler_url, timeout=2)
+                response.raise_for_status()
+                
+                # Parse VM metrics
+                metrics = self._parse_vm_metrics(response.text)
+                
+                # Filter VMs for each zone
+                filtered_core = self._filter_vms(metrics['core'])
+                filtered_package = self._filter_vms(metrics['package'])
+                
+                # Calculate totals
+                total_core_watts = sum(vm['watts'] for vm in filtered_core)
+                total_package_watts = sum(vm['watts'] for vm in filtered_package)
+                
+                # Use core zone VM count (should be same as package)
+                vm_count = len(filtered_core)
+                
+                # Use provided target timestamp for precise timing
+                timestamp = target_timestamp
+                
+                # Calculate relative timestamp from collection start
+                relative_timestamp = timestamp - self.collection_start_time
+                timestamp_iso = datetime.fromtimestamp(timestamp).isoformat()
+                
+                # Combine VM data for storage
+                all_vms = []
+                for vm in filtered_core:
+                    vm_entry = vm.copy()
+                    vm_entry['zone'] = 'core'
+                    all_vms.append(vm_entry)
+                for vm in filtered_package:
+                    vm_entry = vm.copy()
+                    vm_entry['zone'] = 'package'
+                    all_vms.append(vm_entry)
+                
+                # Create data point
+                data_point = PowerDataPoint(
+                    timestamp=relative_timestamp,  # Relative timestamp for merging
+                    timestamp_absolute=timestamp,  # Absolute timestamp for reference
+                    timestamp_iso=timestamp_iso,
+                    total_cpu_watts_core=total_core_watts,
+                    total_cpu_watts_package=total_package_watts,
+                    vm_count=vm_count,
+                    vms=all_vms,
+                    collection_interval=self.collection_interval,
+                    kepler_endpoint=self.kepler_url,
+                    vm_filter=str(self.target_vms) if self.target_vms else 
+                              self.vm_pattern.pattern if self.vm_pattern else "all"
+                )
+                
+                logger.debug(f"Collected power: core={total_core_watts:.4f}W, "
+                           f"package={total_package_watts:.4f}W, VMs={vm_count}")
+                
+                return data_point
+                
+            except requests.RequestException as e:
+                logger.warning(f"Kepler request failed (attempt {attempt + 1}): {e}")
+                if attempt < self.max_retries - 1:
+                    time.sleep(1)
+                else:
+                    logger.error("Failed to collect power metrics after all retries")
+                    return None
+            except Exception as e:
+                logger.error(f"Unexpected error collecting power metrics: {e}")
+                return None
+        
+        return None
+    
     def collect_power_data(self, duration: int, output_file: str = None) -> List[PowerDataPoint]:
-        """Collect power data for specified duration"""
+        """Collect power data for specified duration with precise timing"""
         logger.info(f"Starting power data collection for {duration} seconds")
         
         self.collection_active = True
-        start_time = time.time()
+        
+        # Wait for synchronized start time and get exact start time
+        start_time = self._wait_for_sync_start()
         collection_count = 0
         error_count = 0
         
         # Calculate the expected number of data points based on duration and interval
         expected_points = int(duration / self.collection_interval)
         logger.info(f"Target: {expected_points} data points over {duration}s at {self.collection_interval}s intervals")
+        logger.info(f"Collection started at: {start_time:.6f}")
         
-        # Use time-based termination like VM collector for synchronization
+        # Use precise timing - calculate exact target times for each sample
         while self.collection_active and (time.time() - start_time) < duration:
             try:
-                # Track collection count for logging
-                elapsed_time = time.time() - start_time
+                # Calculate exact target time for this sample
+                target_time = start_time + (collection_count * self.collection_interval)
+                current_time = time.time()
                 
-                data_point = self.collect_power_metrics()
+                # Sleep until target time if needed
+                sleep_duration = target_time - current_time
+                if sleep_duration > 0:
+                    time.sleep(sleep_duration)
+                elif sleep_duration < -0.1:  # Log if we're significantly behind
+                    logger.debug(f"Collection {collection_count}: {abs(sleep_duration):.3f}s behind target")
+                
+                # Use target time for timestamp calculation (precise timing)
+                target_timestamp = target_time
+                
+                data_point = self.collect_power_metrics_with_timestamp(target_timestamp)
                 
                 if data_point:
                     self.power_data.append(data_point)
                     collection_count += 1
                     
                     if collection_count % 50 == 0:  # Log every 5 seconds at 100ms interval
+                        elapsed_time = time.time() - start_time
                         logger.info(f"Collected {collection_count} power measurements "
                                   f"({elapsed_time:.1f}s/{duration}s), "
                                   f"latest: core={data_point.total_cpu_watts_core:.4f}W, "
@@ -326,17 +434,8 @@ class BaremetalPowerCollector:
                                   f"VMs={data_point.vm_count}")
                 else:
                     error_count += 1
-                
-                # Sleep until next collection interval
-                # Calculate when the next collection should start to maintain consistent intervals
-                # even with HTTP latency variations
-                expected_next_start = start_time + (collection_count + error_count) * self.collection_interval
-                current_time = time.time()
-                sleep_time = expected_next_start - current_time
-                
-                if sleep_time > 0:
-                    time.sleep(sleep_time)
-                elif sleep_time < -0.5:  # If we're more than 0.5s behind, log it but continue
+                    # Still increment collection_count to maintain timing even with errors
+                    collection_count += 1
                     logger.debug(f"Collection running {-sleep_time:.3f}s behind schedule")
                 # Don't sleep if we're behind schedule, just continue immediately
                     
@@ -471,6 +570,8 @@ def main():
                        help='Comma-separated list of target VM names (by vm_name or vm_id)')
     parser.add_argument('--vm-pattern', type=str,
                        help='Regex pattern to match VM names (vm_name or vm_id)')
+    parser.add_argument('--start-time', type=float,
+                       help='Synchronized start time (Unix timestamp) for precise timing')
     parser.add_argument('--verbose', action='store_true',
                        help='Enable verbose logging')
     
@@ -489,7 +590,8 @@ def main():
         kepler_url=args.kepler_url,
         collection_interval=args.interval,
         target_vms=target_vms,
-        vm_pattern=args.vm_pattern
+        vm_pattern=args.vm_pattern,
+        sync_start_time=args.start_time
     )
     
     try:

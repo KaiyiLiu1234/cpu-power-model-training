@@ -117,17 +117,22 @@ class VMFeaturePoint:
     collection_interval: float = 1.0
     time_delta_seconds: float = 0.0
     vm_hostname: str = ""
+    core_count: int = 0
 
 class VMFeatureCollector:
     """Collects VM features for CPU power prediction"""
     
     def __init__(self, kepler_url="http://localhost:28282/metrics", 
-                 collection_interval=1.0, max_retries=3, synchronized=True,
-):
+                 collection_interval=1.0, max_retries=3, synchronized=True, sync_start_time=None):
+        """
+        Initialize VM Feature Collector
+        """
         self.kepler_url = kepler_url
         self.collection_interval = collection_interval
         self.max_retries = max_retries
         self.synchronized = synchronized
+        self.sync_start_time = sync_start_time
+        self.core_count = self._detect_cpu_cores()
         
         # Data storage
         self.feature_data: List[VMFeaturePoint] = []
@@ -153,7 +158,7 @@ class VMFeatureCollector:
         signal.signal(signal.SIGINT, self._signal_handler)
         signal.signal(signal.SIGTERM, self._signal_handler)
         
-        logger.info(f"Initialized VM feature collector on {self.vm_hostname}")
+        logger.info(f"Initialized VM feature collector on {self.vm_hostname} ({self.core_count} cores)")
         logger.info(f"Available PMCs: {len(self.available_pmcs)}")
         logger.info(f"System metrics source: /proc/stat (direct system measurement)")
         logger.info(f"Target zones: package, core")
@@ -180,6 +185,25 @@ class VMFeatureCollector:
         except Exception as e:
             logger.debug(f"Force cleanup error: {e}")
     
+    def _wait_for_sync_start(self) -> float:
+        """Wait for synchronized start time and return the exact start time"""
+        if self.sync_start_time is None:
+            # No sync time specified, start immediately
+            start_time = time.time()
+            logger.info(f"Starting collection immediately at: {start_time:.6f}")
+        else:
+            current_time = time.time()
+            if current_time < self.sync_start_time:
+                sleep_duration = self.sync_start_time - current_time
+                logger.info(f"Waiting {sleep_duration:.3f}s for synchronized start at: {self.sync_start_time:.6f}")
+                time.sleep(sleep_duration)
+            else:
+                logger.warning(f"Sync time {self.sync_start_time:.6f} has already passed, starting immediately")
+            start_time = self.sync_start_time
+        
+        self.collection_start_time = start_time
+        return start_time
+    
     def _get_vm_hostname(self) -> str:
         """Get VM hostname for identification"""
         try:
@@ -187,6 +211,26 @@ class VMFeatureCollector:
             return socket.gethostname()
         except Exception:
             return "unknown-vm"
+    
+    def _detect_cpu_cores(self) -> int:
+        """Automatically detect the number of CPU cores in the VM"""
+        try:
+            import os
+            # First try os.cpu_count() which gives logical CPU count
+            logical_cores = os.cpu_count()
+            if logical_cores:
+                logger.debug(f"Detected {logical_cores} logical CPU cores")
+                return logical_cores
+            
+            # Fallback: read from /proc/cpuinfo
+            with open('/proc/cpuinfo', 'r') as f:
+                core_count = len([line for line in f if line.startswith('processor')])
+                logger.debug(f"Detected {core_count} CPU cores from /proc/cpuinfo")
+                return core_count
+                
+        except Exception as e:
+            logger.warning(f"Could not detect CPU core count: {e}, defaulting to 1")
+            return 1
     
     def _check_pmc_availability(self) -> List[str]:
         """Check which performance counters are available in this VM"""
@@ -612,9 +656,12 @@ class VMFeatureCollector:
         
         return derived
     
-    def collect_feature_point(self) -> Optional[VMFeaturePoint]:
+    def collect_feature_point(self, target_timestamp: float = None) -> Optional[VMFeaturePoint]:
         """Collect a single VM feature data point for power prediction.
         Uses synchronized collection to align all metrics to the same time window.
+        
+        Args:
+            target_timestamp: Optional target timestamp for precise timing (uses actual time if None)
         """
         try:
             if self.synchronized:
@@ -654,14 +701,23 @@ class VMFeatureCollector:
                 # Derived features from PMCs
                 derived_data = self.calculate_derived_features(pmc_data, aligned_os)
                 
+                # Use target timestamp for precise timing if provided, otherwise use actual time
+                if target_timestamp is not None:
+                    timestamp = target_timestamp
+                else:
+                    timestamp = t1
+                
                 # Initialize collection start time on first measurement
                 if self.collection_start_time is None:
-                    self.collection_start_time = t1
-                    logger.info(f"VM collection started at absolute time: {t1:.6f}")
+                    # For sync mode, we should already have collection_start_time set
+                    if target_timestamp is not None:
+                        logger.warning("Using target timestamp but collection_start_time not set")
+                    self.collection_start_time = timestamp
+                    logger.info(f"VM collection started at absolute time: {timestamp:.6f}")
                 
                 # Calculate relative timestamp from collection start
-                relative_timestamp = t1 - self.collection_start_time
-                timestamp_iso = datetime.fromtimestamp(t1).isoformat()
+                relative_timestamp = timestamp - self.collection_start_time
+                timestamp_iso = datetime.fromtimestamp(timestamp).isoformat()
                 
                 # Compose feature point (using relative timestamp)
                 point = VMFeaturePoint(
@@ -716,6 +772,7 @@ class VMFeatureCollector:
                     collection_interval=self.collection_interval,
                     time_delta_seconds=time_delta,
                     vm_hostname=self.vm_hostname,
+                    core_count=self.core_count,
                 )
                 return point
             else:
@@ -794,6 +851,7 @@ class VMFeatureCollector:
                     cpu_efficiency=derived_data.get('cpu_efficiency', 0.0),
                     collection_interval=self.collection_interval,
                     vm_hostname=self.vm_hostname,
+                    core_count=self.core_count,
                 )
                 return point
         except Exception as e:
@@ -866,18 +924,34 @@ class VMFeatureCollector:
             return {}
     
     def collect_vm_features(self, duration: int, output_file: str = None) -> List[VMFeaturePoint]:
-        """Collect VM features for specified duration"""
+        """Collect VM features for specified duration with precise timing"""
         logger.info(f"Starting VM feature collection for {duration} seconds on {self.vm_hostname}")
         
-        
         self.collection_active = True
-        start_time = time.time()
+        
+        # Wait for synchronized start time and get exact start time
+        start_time = self._wait_for_sync_start()
         collection_count = 0
         error_count = 0
         
+        logger.info(f"Collection started at: {start_time:.6f}")
+        
+        # Use precise timing - calculate exact target times for each sample
         while self.collection_active and (time.time() - start_time) < duration:
             try:
-                point = self.collect_feature_point()
+                # Calculate exact target time for this sample
+                target_time = start_time + (collection_count * self.collection_interval)
+                current_time = time.time()
+                
+                # Sleep until target time if needed
+                sleep_duration = target_time - current_time
+                if sleep_duration > 0:
+                    time.sleep(sleep_duration)
+                elif sleep_duration < -0.1:  # Log if we're significantly behind
+                    logger.debug(f"Collection {collection_count}: {abs(sleep_duration):.3f}s behind target")
+                
+                # Use target time for timestamp calculation (precise timing)
+                point = self.collect_feature_point(target_timestamp=target_time)
                 
                 if point:
                     self.feature_data.append(point)
@@ -890,14 +964,8 @@ class VMFeatureCollector:
                                   f"context switches: {point.sys_context_switches}")
                 else:
                     error_count += 1
-                    
-                # Sleep until next collection interval
-                next_collection = start_time + (collection_count + error_count + 1) * self.collection_interval
-                sleep_time = next_collection - time.time()
-                if sleep_time > 0:
-                    time.sleep(sleep_time)
-                elif sleep_time < -0.5:  # If we're significantly behind schedule
-                    logger.debug(f"Collection running {-sleep_time:.2f}s behind schedule")
+                    # Still increment collection_count to maintain timing even with errors
+                    collection_count += 1
                     
             except KeyboardInterrupt:
                 logger.info("VM feature collection interrupted by user")
@@ -1024,6 +1092,8 @@ def main():
                        help='Enable verbose logging')
     parser.add_argument('--no-sync', action='store_true',
                         help='Disable synchronized bracketed window collection')
+    parser.add_argument('--start-time', type=float,
+                       help='Synchronized start time (Unix timestamp) for precise timing')
     
     args = parser.parse_args()
     
@@ -1036,7 +1106,8 @@ def main():
     collector = VMFeatureCollector(
         kepler_url=args.kepler_url,
         collection_interval=args.interval,
-        synchronized=not args.no_sync
+        synchronized=not args.no_sync,
+        sync_start_time=args.start_time
     )
     
     # Test /proc/stat accessibility

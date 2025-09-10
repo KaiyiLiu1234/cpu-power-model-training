@@ -225,13 +225,18 @@ class TrainingDataOrchestrator:
             logger.error(f"Failed to start VM stress workloads: {e}")
             return False
     
-    def start_vm_feature_collection(self, duration: int, output_file: str) -> bool:
-        """Start feature collection on VM"""
+    def start_vm_feature_collection(self, duration: int, output_file: str, start_time: float = None) -> bool:
+        """Start feature collection on VM with optional synchronized start time"""
         try:
             collector_cmd = (f"python3 vm_feature_collector/src/vm_feature_collector.py "
                            f"--duration {duration} --interval {self.interval} --output {output_file}")
             
-            logger.info(f"Starting VM feature collection for {duration}s (auto-detecting cores)")
+            if start_time is not None:
+                collector_cmd += f" --start-time {start_time:.6f}"
+                logger.info(f"Starting VM feature collection for {duration}s with sync start at {start_time:.6f}")
+            else:
+                logger.info(f"Starting VM feature collection for {duration}s (auto-detecting cores)")
+                
             self.vm_collector_process = self._execute_vm_command(collector_cmd, background=True)
             return True
             
@@ -239,8 +244,8 @@ class TrainingDataOrchestrator:
             logger.error(f"Failed to start VM feature collection: {e}")
             return False
     
-    def start_baremetal_power_collection(self, duration: int, output_file: str) -> bool:
-        """Start power collection on baremetal"""
+    def start_baremetal_power_collection(self, duration: int, output_file: str, start_time: float = None) -> bool:
+        """Start power collection on baremetal with optional synchronized start time"""
         try:
             power_cmd = [
                 "python3", "bm_power_collector.py",
@@ -252,7 +257,12 @@ class TrainingDataOrchestrator:
                 "--verbose"
             ]
             
-            logger.info(f"Starting baremetal power collection for {duration}s")
+            if start_time is not None:
+                power_cmd.extend(["--start-time", f"{start_time:.6f}"])
+                logger.info(f"Starting baremetal power collection for {duration}s with sync start at {start_time:.6f}")
+            else:
+                logger.info(f"Starting baremetal power collection for {duration}s")
+                
             self.bm_power_process = subprocess.Popen(
                 power_cmd, 
                 stdout=subprocess.PIPE, 
@@ -358,15 +368,19 @@ class TrainingDataOrchestrator:
             if not self.start_vm_stress_workloads(workloads, cpu_intensive_duration, stress_duration):
                 raise RuntimeError("Failed to start VM stress workloads")
             
-            # 5. Start all three processes simultaneously as background processes
-            logger.info("Starting all collection processes simultaneously...")
+            # 5. Start all collection processes with synchronized timing
+            logger.info("Starting synchronized collection processes...")
             
-            # Start VM feature collection
-            if not self.start_vm_feature_collection(duration, vm_features_file):
+            # Calculate synchronized start time (5 seconds from now to allow setup)
+            sync_start_time = time.time() + 5.0
+            logger.info(f"Synchronized collection will start at: {sync_start_time:.6f} ({datetime.fromtimestamp(sync_start_time).isoformat()})")
+            
+            # Start VM feature collection with sync time
+            if not self.start_vm_feature_collection(duration, vm_features_file, sync_start_time):
                 raise RuntimeError("Failed to start VM feature collection")
             
-            # Start baremetal power collection
-            if not self.start_baremetal_power_collection(duration, bm_power_file):
+            # Start baremetal power collection with same sync time
+            if not self.start_baremetal_power_collection(duration, bm_power_file, sync_start_time):
                 raise RuntimeError("Failed to start baremetal power collection")
             
             logger.info(f"All processes started - they will run for {duration}s and finish automatically")
