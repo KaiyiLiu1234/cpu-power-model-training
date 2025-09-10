@@ -394,7 +394,35 @@ class TrainingDataOrchestrator:
                 # Fallback if no BM process
                 time.sleep(collection_timeout)
             
-            # 9. Copy VM data to local machine (both JSON and CSV)
+            # 9. Check if VM processes are still running
+            ret_code, stdout, stderr = self._execute_vm_command("pgrep -f vm_feature_collector.py")
+            if ret_code == 0:
+                logger.info(f"VM collector still running (PIDs: {stdout.strip()}), waiting for it to finish...")
+                # Wait a bit more for VM collector to finish
+                time.sleep(10)
+                # Check again
+                ret_code, stdout, stderr = self._execute_vm_command("pgrep -f vm_feature_collector.py")
+                if ret_code == 0:
+                    logger.warning(f"VM collector still running after extra wait (PIDs: {stdout.strip()})")
+                else:
+                    logger.info("VM collector has finished")
+            else:
+                logger.info("VM collector process has finished")
+                time.sleep(2)  # Small buffer for file finalization
+            
+            # 10. Verify VM files exist before copying
+            logger.info("Checking if VM data files exist...")
+            ret_code, stdout, stderr = self._execute_vm_command(f"ls -la {vm_features_file}")
+            if ret_code != 0:
+                logger.error(f"VM JSON file not found: {stderr}")
+                # List the data directory to see what files exist
+                ret_code2, stdout2, stderr2 = self._execute_vm_command("ls -la data/")
+                logger.info(f"VM data directory contents: {stdout2}")
+                raise RuntimeError(f"VM feature JSON file not found: {vm_features_file}")
+            else:
+                logger.info(f"VM JSON file found: {stdout.strip()}")
+            
+            # 11. Copy VM data to local machine (both JSON and CSV)
             logger.info("Copying VM data to local machine...")
             if not self.copy_vm_data(vm_features_file, local_vm_features_file):
                 raise RuntimeError("Failed to copy VM feature JSON data")
