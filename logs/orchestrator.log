@@ -1,0 +1,34 @@
+2025-09-10 10:02:40,081 - INFO - Initialized orchestrator for VM fedora40 at 192.168.122.85
+2025-09-10 10:02:40,081 - INFO - Collection interval: 1.0s, Kepler: http://localhost:28283/metrics
+2025-09-10 10:02:40,082 - INFO - Starting orchestrated data collection
+2025-09-10 10:02:40,082 - INFO - Duration: 300s, Workloads: ['cycle', 'cpu_intensive']
+2025-09-10 10:02:40,082 - INFO - Output files: data/vm_features_training_20250910_100240.json, data/bm_power_training_20250910_100240.csv
+2025-09-10 10:02:40,082 - INFO - No SSH key specified, will attempt password/agent authentication
+2025-09-10 10:02:40,130 - INFO - Connected (version 2.0, client OpenSSH_9.6)
+2025-09-10 10:02:40,254 - INFO - Authentication (publickey) successful!
+2025-09-10 10:02:40,457 - INFO - SSH connection to 192.168.122.85 established successfully
+2025-09-10 10:02:40,923 - INFO - VM project structure verified
+2025-09-10 10:02:41,049 - INFO - Starting VM stress workloads: cycle,cpu_intensive for 310s
+2025-09-10 10:02:41,094 - INFO - Started background VM process
+2025-09-10 10:02:41,095 - INFO - Starting all collection processes simultaneously...
+2025-09-10 10:02:41,095 - INFO - Starting VM feature collection for 300s
+2025-09-10 10:02:41,145 - INFO - Started background VM process
+2025-09-10 10:02:41,146 - INFO - Starting baremetal power collection for 300s
+2025-09-10 10:02:41,149 - INFO - All processes started - they will run for 300s and finish automatically
+2025-09-10 10:07:51,149 - INFO - Copying VM data to local machine...
+2025-09-10 10:07:51,345 - INFO - [chan 7] Opened sftp connection (server version 3)
+2025-09-10 10:07:51,404 - INFO - [chan 7] sftp session closed.
+2025-09-10 10:07:51,405 - INFO - Copied data/vm_features_training_20250910_100240.json from VM to data/vm_features_training_20250910_100240.json
+2025-09-10 10:07:51,555 - INFO - [chan 8] Opened sftp connection (server version 3)
+2025-09-10 10:07:51,563 - INFO - [chan 8] sftp session closed.
+2025-09-10 10:07:51,564 - INFO - Copied data/vm_features_training_20250910_100240.csv from VM to data/vm_features_training_20250910_100240.csv
+2025-09-10 10:07:51,564 - INFO - Data collection orchestration completed successfully
+2025-09-10 10:07:51,564 - INFO - SSH connection closed
+2025-09-10 10:07:51,565 - INFO - ============================================================
+2025-09-10 10:07:51,565 - INFO - COLLECTION COMPLETED SUCCESSFULLY
+2025-09-10 10:07:51,565 - INFO - ============================================================
+2025-09-10 10:07:51,565 - INFO - VM Features JSON: data/vm_features_training_20250910_100240.json
+2025-09-10 10:07:51,565 - INFO - VM Features CSV: data/vm_features_training_20250910_100240.csv
+2025-09-10 10:07:51,565 - INFO - BM Power: data/bm_power_training_20250910_100240.csv
+2025-09-10 10:07:51,566 - INFO - Timestamp: 20250910_100240
+2025-09-10 10:07:51,566 - INFO - Next step: Run merge_datasets.py to combine the data

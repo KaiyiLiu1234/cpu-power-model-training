@@ -1,0 +1,744 @@
+2025-09-10 10:02:41,495 - INFO - Initialized bare metal power collector
+2025-09-10 10:02:41,495 - INFO - Kepler endpoint: http://localhost:28283/metrics
+2025-09-10 10:02:41,495 - INFO - Collection interval: 1.0s
+2025-09-10 10:02:41,495 - INFO - Target VMs: ['fedora40']
+2025-09-10 10:02:41,495 - INFO - Testing Kepler connectivity...
+2025-09-10 10:02:41,498 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:41,597 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:41,639 - INFO - BM collection started at absolute time: 1757512961.639526
+2025-09-10 10:02:41,639 - DEBUG - Collected power: core=0.0671W, package=0.1429W, VMs=1
+2025-09-10 10:02:41,640 - INFO - Kepler connection successful! Found 1 target VMs
+2025-09-10 10:02:41,640 - INFO - Test measurement: core=0.0671W, package=0.1429W
+2025-09-10 10:02:41,640 - INFO - Starting power data collection for 300 seconds
+2025-09-10 10:02:41,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:41,688 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:41,721 - DEBUG - Collected power: core=0.0671W, package=0.1429W, VMs=1
+2025-09-10 10:02:43,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:43,718 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:43,752 - DEBUG - Collected power: core=0.0349W, package=0.0848W, VMs=1
+2025-09-10 10:02:44,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:44,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:44,748 - DEBUG - Collected power: core=0.0349W, package=0.0848W, VMs=1
+2025-09-10 10:02:45,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:45,714 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:45,746 - DEBUG - Collected power: core=0.0066W, package=0.0158W, VMs=1
+2025-09-10 10:02:46,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:46,685 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:46,721 - DEBUG - Collected power: core=0.0066W, package=0.0158W, VMs=1
+2025-09-10 10:02:47,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:47,682 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:47,712 - DEBUG - Collected power: core=0.0053W, package=0.0125W, VMs=1
+2025-09-10 10:02:48,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:48,710 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:48,741 - DEBUG - Collected power: core=0.0074W, package=0.0174W, VMs=1
+2025-09-10 10:02:49,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:49,683 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:49,714 - DEBUG - Collected power: core=0.0074W, package=0.0174W, VMs=1
+2025-09-10 10:02:50,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:50,711 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:50,744 - DEBUG - Collected power: core=0.0079W, package=0.0186W, VMs=1
+2025-09-10 10:02:51,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:51,680 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:51,712 - DEBUG - Collected power: core=0.0079W, package=0.0186W, VMs=1
+2025-09-10 10:02:52,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:52,682 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:52,715 - DEBUG - Collected power: core=0.0046W, package=0.0109W, VMs=1
+2025-09-10 10:02:53,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:53,720 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:53,752 - DEBUG - Collected power: core=0.0050W, package=0.0115W, VMs=1
+2025-09-10 10:02:54,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:54,688 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:54,720 - DEBUG - Collected power: core=0.0050W, package=0.0115W, VMs=1
+2025-09-10 10:02:55,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:55,713 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:55,749 - DEBUG - Collected power: core=0.0055W, package=0.0130W, VMs=1
+2025-09-10 10:02:56,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:56,681 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:56,717 - DEBUG - Collected power: core=0.0055W, package=0.0130W, VMs=1
+2025-09-10 10:02:57,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:57,683 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:57,714 - DEBUG - Collected power: core=0.0545W, package=0.1195W, VMs=1
+2025-09-10 10:02:58,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:58,756 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:58,806 - DEBUG - Collected power: core=0.0783W, package=0.1727W, VMs=1
+2025-09-10 10:02:59,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:02:59,679 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:02:59,708 - DEBUG - Collected power: core=0.0783W, package=0.1727W, VMs=1
+2025-09-10 10:03:00,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:00,713 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:00,748 - DEBUG - Collected power: core=0.0321W, package=0.0734W, VMs=1
+2025-09-10 10:03:01,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:01,680 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:01,710 - DEBUG - Collected power: core=0.0321W, package=0.0734W, VMs=1
+2025-09-10 10:03:02,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:02,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:02,731 - DEBUG - Collected power: core=0.0567W, package=0.1258W, VMs=1
+2025-09-10 10:03:03,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:03,713 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:03,751 - DEBUG - Collected power: core=0.0436W, package=0.0845W, VMs=1
+2025-09-10 10:03:04,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:04,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:04,730 - DEBUG - Collected power: core=0.0436W, package=0.0845W, VMs=1
+2025-09-10 10:03:05,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:05,716 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:05,756 - DEBUG - Collected power: core=0.0678W, package=0.1346W, VMs=1
+2025-09-10 10:03:06,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:06,699 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:06,745 - DEBUG - Collected power: core=0.0678W, package=0.1346W, VMs=1
+2025-09-10 10:03:07,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:07,699 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:07,734 - DEBUG - Collected power: core=0.0716W, package=0.1431W, VMs=1
+2025-09-10 10:03:08,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:08,744 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:08,779 - DEBUG - Collected power: core=0.0064W, package=0.0118W, VMs=1
+2025-09-10 10:03:09,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:09,692 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:09,731 - DEBUG - Collected power: core=0.0064W, package=0.0118W, VMs=1
+2025-09-10 10:03:10,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:10,710 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:10,744 - DEBUG - Collected power: core=0.0999W, package=0.2049W, VMs=1
+2025-09-10 10:03:11,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:11,680 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:11,709 - DEBUG - Collected power: core=0.0999W, package=0.2049W, VMs=1
+2025-09-10 10:03:12,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:12,701 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:12,732 - DEBUG - Collected power: core=0.0872W, package=0.1891W, VMs=1
+2025-09-10 10:03:13,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:13,715 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:13,744 - DEBUG - Collected power: core=0.1035W, package=0.2265W, VMs=1
+2025-09-10 10:03:14,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:14,682 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:14,712 - DEBUG - Collected power: core=0.1035W, package=0.2265W, VMs=1
+2025-09-10 10:03:15,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:15,709 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:15,745 - DEBUG - Collected power: core=0.0949W, package=0.2006W, VMs=1
+2025-09-10 10:03:16,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:16,688 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:16,729 - DEBUG - Collected power: core=0.0949W, package=0.2006W, VMs=1
+2025-09-10 10:03:17,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:17,687 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:17,721 - DEBUG - Collected power: core=0.1083W, package=0.2291W, VMs=1
+2025-09-10 10:03:18,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:18,725 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:18,759 - DEBUG - Collected power: core=0.1201W, package=0.2564W, VMs=1
+2025-09-10 10:03:19,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:19,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:19,721 - DEBUG - Collected power: core=0.1201W, package=0.2564W, VMs=1
+2025-09-10 10:03:20,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:20,715 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:20,743 - DEBUG - Collected power: core=0.1121W, package=0.2497W, VMs=1
+2025-09-10 10:03:21,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:21,680 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:21,710 - DEBUG - Collected power: core=0.1121W, package=0.2497W, VMs=1
+2025-09-10 10:03:22,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:22,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:22,717 - DEBUG - Collected power: core=0.0879W, package=0.1872W, VMs=1
+2025-09-10 10:03:23,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:23,722 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:23,761 - DEBUG - Collected power: core=0.1464W, package=0.3039W, VMs=1
+2025-09-10 10:03:24,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:24,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:24,722 - DEBUG - Collected power: core=0.1464W, package=0.3039W, VMs=1
+2025-09-10 10:03:25,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:25,718 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:25,748 - DEBUG - Collected power: core=0.1091W, package=0.2424W, VMs=1
+2025-09-10 10:03:26,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:26,678 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:26,715 - DEBUG - Collected power: core=0.1091W, package=0.2424W, VMs=1
+2025-09-10 10:03:27,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:27,685 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:27,715 - DEBUG - Collected power: core=0.0871W, package=0.1876W, VMs=1
+2025-09-10 10:03:28,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:28,734 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:28,762 - DEBUG - Collected power: core=0.1369W, package=0.2849W, VMs=1
+2025-09-10 10:03:29,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:29,683 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:29,713 - DEBUG - Collected power: core=0.1369W, package=0.2849W, VMs=1
+2025-09-10 10:03:30,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:30,729 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:30,774 - DEBUG - Collected power: core=0.1413W, package=0.2950W, VMs=1
+2025-09-10 10:03:31,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:31,681 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:31,713 - DEBUG - Collected power: core=0.1413W, package=0.2950W, VMs=1
+2025-09-10 10:03:31,713 - INFO - Collected 50 power measurements, latest: core=0.1413W, package=0.2950W, VMs=1
+2025-09-10 10:03:32,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:32,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:32,715 - DEBUG - Collected power: core=0.1366W, package=0.2724W, VMs=1
+2025-09-10 10:03:33,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:33,713 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:33,744 - DEBUG - Collected power: core=0.1928W, package=0.3910W, VMs=1
+2025-09-10 10:03:34,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:34,684 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:34,713 - DEBUG - Collected power: core=0.1928W, package=0.3910W, VMs=1
+2025-09-10 10:03:35,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:35,718 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:35,752 - DEBUG - Collected power: core=0.1656W, package=0.3518W, VMs=1
+2025-09-10 10:03:36,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:36,682 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:36,713 - DEBUG - Collected power: core=0.1656W, package=0.3518W, VMs=1
+2025-09-10 10:03:37,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:37,696 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:37,728 - DEBUG - Collected power: core=0.1454W, package=0.2984W, VMs=1
+2025-09-10 10:03:38,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:38,711 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:38,744 - DEBUG - Collected power: core=0.1772W, package=0.3526W, VMs=1
+2025-09-10 10:03:39,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:39,691 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:39,726 - DEBUG - Collected power: core=0.1772W, package=0.3526W, VMs=1
+2025-09-10 10:03:40,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:40,719 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:40,753 - DEBUG - Collected power: core=0.1436W, package=0.2770W, VMs=1
+2025-09-10 10:03:41,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:41,699 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:41,739 - DEBUG - Collected power: core=0.1436W, package=0.2770W, VMs=1
+2025-09-10 10:03:42,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:42,704 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:42,751 - DEBUG - Collected power: core=0.1418W, package=0.2661W, VMs=1
+2025-09-10 10:03:43,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:43,747 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:43,798 - DEBUG - Collected power: core=0.2133W, package=0.4106W, VMs=1
+2025-09-10 10:03:44,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:44,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:44,722 - DEBUG - Collected power: core=0.2133W, package=0.4106W, VMs=1
+2025-09-10 10:03:45,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:45,726 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:45,761 - DEBUG - Collected power: core=0.2466W, package=0.4486W, VMs=1
+2025-09-10 10:03:46,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:46,688 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:46,724 - DEBUG - Collected power: core=0.2466W, package=0.4486W, VMs=1
+2025-09-10 10:03:47,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:47,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:47,731 - DEBUG - Collected power: core=0.2676W, package=0.5012W, VMs=1
+2025-09-10 10:03:48,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:48,710 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:48,740 - DEBUG - Collected power: core=0.2672W, package=0.5271W, VMs=1
+2025-09-10 10:03:49,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:49,682 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:49,714 - DEBUG - Collected power: core=0.2672W, package=0.5271W, VMs=1
+2025-09-10 10:03:50,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:50,712 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:50,745 - DEBUG - Collected power: core=0.3152W, package=0.6422W, VMs=1
+2025-09-10 10:03:51,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:51,682 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:51,712 - DEBUG - Collected power: core=0.3152W, package=0.6422W, VMs=1
+2025-09-10 10:03:52,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:52,684 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:52,713 - DEBUG - Collected power: core=0.1983W, package=0.3852W, VMs=1
+2025-09-10 10:03:53,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:53,736 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:53,799 - DEBUG - Collected power: core=0.2727W, package=0.5502W, VMs=1
+2025-09-10 10:03:54,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:54,691 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:54,721 - DEBUG - Collected power: core=0.2727W, package=0.5502W, VMs=1
+2025-09-10 10:03:55,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:55,710 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:55,741 - DEBUG - Collected power: core=0.1971W, package=0.3847W, VMs=1
+2025-09-10 10:03:56,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:56,681 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:56,714 - DEBUG - Collected power: core=0.1971W, package=0.3847W, VMs=1
+2025-09-10 10:03:57,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:57,684 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:57,714 - DEBUG - Collected power: core=0.2193W, package=0.4345W, VMs=1
+2025-09-10 10:03:58,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:58,712 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:58,745 - DEBUG - Collected power: core=0.2486W, package=0.4950W, VMs=1
+2025-09-10 10:03:59,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:03:59,697 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:03:59,729 - DEBUG - Collected power: core=0.2486W, package=0.4950W, VMs=1
+2025-09-10 10:04:00,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:00,709 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:00,741 - DEBUG - Collected power: core=0.2524W, package=0.4936W, VMs=1
+2025-09-10 10:04:01,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:01,699 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:01,745 - DEBUG - Collected power: core=0.2524W, package=0.4936W, VMs=1
+2025-09-10 10:04:02,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:02,683 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:02,714 - DEBUG - Collected power: core=0.2585W, package=0.5050W, VMs=1
+2025-09-10 10:04:03,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:03,710 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:03,741 - DEBUG - Collected power: core=0.2965W, package=0.5813W, VMs=1
+2025-09-10 10:04:04,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:04,687 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:04,714 - DEBUG - Collected power: core=0.2965W, package=0.5813W, VMs=1
+2025-09-10 10:04:05,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:05,712 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:05,755 - DEBUG - Collected power: core=0.2694W, package=0.5284W, VMs=1
+2025-09-10 10:04:06,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:06,703 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:06,743 - DEBUG - Collected power: core=0.2694W, package=0.5284W, VMs=1
+2025-09-10 10:04:07,644 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:07,681 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:07,710 - DEBUG - Collected power: core=0.2405W, package=0.4671W, VMs=1
+2025-09-10 10:04:08,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:08,709 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:08,744 - DEBUG - Collected power: core=0.3019W, package=0.5749W, VMs=1
+2025-09-10 10:04:09,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:09,690 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:09,727 - DEBUG - Collected power: core=0.3019W, package=0.5749W, VMs=1
+2025-09-10 10:04:10,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:10,713 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:10,746 - DEBUG - Collected power: core=0.3355W, package=0.6450W, VMs=1
+2025-09-10 10:04:11,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:11,683 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:11,714 - DEBUG - Collected power: core=0.3355W, package=0.6450W, VMs=1
+2025-09-10 10:04:12,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:12,677 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:12,705 - DEBUG - Collected power: core=0.2571W, package=0.5063W, VMs=1
+2025-09-10 10:04:13,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:13,722 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:13,751 - DEBUG - Collected power: core=0.2761W, package=0.5509W, VMs=1
+2025-09-10 10:04:14,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:14,680 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:14,709 - DEBUG - Collected power: core=0.2761W, package=0.5509W, VMs=1
+2025-09-10 10:04:15,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:15,708 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:15,740 - DEBUG - Collected power: core=0.3114W, package=0.5997W, VMs=1
+2025-09-10 10:04:16,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:16,677 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:16,708 - DEBUG - Collected power: core=0.3114W, package=0.5997W, VMs=1
+2025-09-10 10:04:17,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:17,680 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:17,710 - DEBUG - Collected power: core=0.2807W, package=0.5206W, VMs=1
+2025-09-10 10:04:18,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:18,719 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:18,760 - DEBUG - Collected power: core=0.3446W, package=0.5990W, VMs=1
+2025-09-10 10:04:19,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:19,682 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:19,726 - DEBUG - Collected power: core=0.3446W, package=0.5990W, VMs=1
+2025-09-10 10:04:20,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:20,728 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:20,762 - DEBUG - Collected power: core=0.4286W, package=0.7670W, VMs=1
+2025-09-10 10:04:21,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:21,690 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:21,728 - DEBUG - Collected power: core=0.4286W, package=0.7670W, VMs=1
+2025-09-10 10:04:21,729 - INFO - Collected 100 power measurements, latest: core=0.4286W, package=0.7670W, VMs=1
+2025-09-10 10:04:22,644 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:22,721 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:22,771 - DEBUG - Collected power: core=0.3843W, package=0.6940W, VMs=1
+2025-09-10 10:04:23,647 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:23,756 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:23,798 - DEBUG - Collected power: core=0.3614W, package=0.6092W, VMs=1
+2025-09-10 10:04:24,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:24,685 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:24,720 - DEBUG - Collected power: core=0.3614W, package=0.6092W, VMs=1
+2025-09-10 10:04:25,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:25,714 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:25,745 - DEBUG - Collected power: core=0.5439W, package=0.9785W, VMs=1
+2025-09-10 10:04:26,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:26,678 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:26,706 - DEBUG - Collected power: core=0.5439W, package=0.9785W, VMs=1
+2025-09-10 10:04:27,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:27,678 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:27,707 - DEBUG - Collected power: core=0.5180W, package=0.9836W, VMs=1
+2025-09-10 10:04:28,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:28,712 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:28,743 - DEBUG - Collected power: core=0.3478W, package=0.6416W, VMs=1
+2025-09-10 10:04:29,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:29,687 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:29,719 - DEBUG - Collected power: core=0.3478W, package=0.6416W, VMs=1
+2025-09-10 10:04:30,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:30,755 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:30,797 - DEBUG - Collected power: core=0.3682W, package=0.6963W, VMs=1
+2025-09-10 10:04:31,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:31,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:31,723 - DEBUG - Collected power: core=0.3682W, package=0.6963W, VMs=1
+2025-09-10 10:04:32,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:32,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:32,727 - DEBUG - Collected power: core=0.4016W, package=0.7086W, VMs=1
+2025-09-10 10:04:33,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:33,710 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:33,740 - DEBUG - Collected power: core=0.5266W, package=0.9674W, VMs=1
+2025-09-10 10:04:34,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:34,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:34,718 - DEBUG - Collected power: core=0.5266W, package=0.9674W, VMs=1
+2025-09-10 10:04:35,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:35,741 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:35,769 - DEBUG - Collected power: core=0.3827W, package=0.7122W, VMs=1
+2025-09-10 10:04:36,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:36,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:36,718 - DEBUG - Collected power: core=0.3827W, package=0.7122W, VMs=1
+2025-09-10 10:04:37,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:37,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:37,737 - DEBUG - Collected power: core=0.4222W, package=0.7662W, VMs=1
+2025-09-10 10:04:38,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:38,722 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:38,759 - DEBUG - Collected power: core=0.4460W, package=0.8111W, VMs=1
+2025-09-10 10:04:39,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:39,688 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:39,718 - DEBUG - Collected power: core=0.4460W, package=0.8111W, VMs=1
+2025-09-10 10:04:40,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:40,730 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:40,764 - DEBUG - Collected power: core=0.4756W, package=0.8736W, VMs=1
+2025-09-10 10:04:41,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:41,678 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:41,709 - DEBUG - Collected power: core=0.4756W, package=0.8736W, VMs=1
+2025-09-10 10:04:42,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:42,684 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:42,715 - DEBUG - Collected power: core=0.3979W, package=0.7216W, VMs=1
+2025-09-10 10:04:43,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:43,719 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:43,750 - DEBUG - Collected power: core=0.4281W, package=0.7987W, VMs=1
+2025-09-10 10:04:44,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:44,688 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:44,730 - DEBUG - Collected power: core=0.4281W, package=0.7987W, VMs=1
+2025-09-10 10:04:45,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:45,724 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:45,754 - DEBUG - Collected power: core=0.4208W, package=0.7745W, VMs=1
+2025-09-10 10:04:46,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:46,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:46,738 - DEBUG - Collected power: core=0.4208W, package=0.7745W, VMs=1
+2025-09-10 10:04:47,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:47,698 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:47,744 - DEBUG - Collected power: core=0.4453W, package=0.7981W, VMs=1
+2025-09-10 10:04:48,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:48,722 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:48,751 - DEBUG - Collected power: core=0.4909W, package=0.8562W, VMs=1
+2025-09-10 10:04:49,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:49,695 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:49,729 - DEBUG - Collected power: core=0.4909W, package=0.8562W, VMs=1
+2025-09-10 10:04:50,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:50,717 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:50,764 - DEBUG - Collected power: core=0.5931W, package=1.0654W, VMs=1
+2025-09-10 10:04:51,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:51,679 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:51,712 - DEBUG - Collected power: core=0.5931W, package=1.0654W, VMs=1
+2025-09-10 10:04:52,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:52,699 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:52,742 - DEBUG - Collected power: core=0.4487W, package=0.7984W, VMs=1
+2025-09-10 10:04:53,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:53,716 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:53,760 - DEBUG - Collected power: core=0.5067W, package=0.9082W, VMs=1
+2025-09-10 10:04:54,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:54,699 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:54,737 - DEBUG - Collected power: core=0.5067W, package=0.9082W, VMs=1
+2025-09-10 10:04:55,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:55,733 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:55,766 - DEBUG - Collected power: core=0.4777W, package=0.8326W, VMs=1
+2025-09-10 10:04:56,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:56,683 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:56,727 - DEBUG - Collected power: core=0.4777W, package=0.8326W, VMs=1
+2025-09-10 10:04:57,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:57,705 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:57,743 - DEBUG - Collected power: core=0.5119W, package=0.8607W, VMs=1
+2025-09-10 10:04:58,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:58,742 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:58,788 - DEBUG - Collected power: core=0.5566W, package=0.9689W, VMs=1
+2025-09-10 10:04:59,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:04:59,680 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:04:59,724 - DEBUG - Collected power: core=0.5566W, package=0.9689W, VMs=1
+2025-09-10 10:05:00,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:00,756 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:00,797 - DEBUG - Collected power: core=0.6098W, package=1.0163W, VMs=1
+2025-09-10 10:05:01,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:01,697 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:01,736 - DEBUG - Collected power: core=0.6098W, package=1.0163W, VMs=1
+2025-09-10 10:05:02,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:02,703 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:02,754 - DEBUG - Collected power: core=0.7145W, package=1.2330W, VMs=1
+2025-09-10 10:05:03,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:03,719 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:03,756 - DEBUG - Collected power: core=0.6505W, package=1.1560W, VMs=1
+2025-09-10 10:05:04,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:04,679 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:04,707 - DEBUG - Collected power: core=0.6505W, package=1.1560W, VMs=1
+2025-09-10 10:05:05,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:05,709 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:05,742 - DEBUG - Collected power: core=0.8640W, package=1.5268W, VMs=1
+2025-09-10 10:05:06,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:06,693 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:06,733 - DEBUG - Collected power: core=0.8640W, package=1.5268W, VMs=1
+2025-09-10 10:05:07,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:07,715 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:07,760 - DEBUG - Collected power: core=0.5745W, package=0.9937W, VMs=1
+2025-09-10 10:05:08,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:08,722 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:08,756 - DEBUG - Collected power: core=0.5157W, package=0.9152W, VMs=1
+2025-09-10 10:05:09,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:09,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:09,730 - DEBUG - Collected power: core=0.5157W, package=0.9152W, VMs=1
+2025-09-10 10:05:10,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:10,718 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:10,760 - DEBUG - Collected power: core=0.7054W, package=1.2415W, VMs=1
+2025-09-10 10:05:11,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:11,683 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:11,722 - DEBUG - Collected power: core=0.7054W, package=1.2415W, VMs=1
+2025-09-10 10:05:11,723 - INFO - Collected 150 power measurements, latest: core=0.7054W, package=1.2415W, VMs=1
+2025-09-10 10:05:12,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:12,699 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:12,733 - DEBUG - Collected power: core=0.5267W, package=0.9225W, VMs=1
+2025-09-10 10:05:13,644 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:13,719 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:13,773 - DEBUG - Collected power: core=0.6581W, package=1.1590W, VMs=1
+2025-09-10 10:05:14,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:14,698 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:14,728 - DEBUG - Collected power: core=0.6581W, package=1.1590W, VMs=1
+2025-09-10 10:05:15,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:15,716 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:15,746 - DEBUG - Collected power: core=0.5641W, package=0.9896W, VMs=1
+2025-09-10 10:05:16,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:16,684 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:16,713 - DEBUG - Collected power: core=0.5641W, package=0.9896W, VMs=1
+2025-09-10 10:05:17,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:17,691 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:17,723 - DEBUG - Collected power: core=0.6479W, package=1.1054W, VMs=1
+2025-09-10 10:05:18,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:18,706 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:18,735 - DEBUG - Collected power: core=0.6827W, package=1.1572W, VMs=1
+2025-09-10 10:05:19,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:19,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:19,714 - DEBUG - Collected power: core=0.6827W, package=1.1572W, VMs=1
+2025-09-10 10:05:20,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:20,721 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:20,755 - DEBUG - Collected power: core=0.7345W, package=1.2775W, VMs=1
+2025-09-10 10:05:21,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:21,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:21,722 - DEBUG - Collected power: core=0.7345W, package=1.2775W, VMs=1
+2025-09-10 10:05:22,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:22,692 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:22,720 - DEBUG - Collected power: core=0.5943W, package=0.9995W, VMs=1
+2025-09-10 10:05:23,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:23,729 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:23,762 - DEBUG - Collected power: core=0.8101W, package=1.3837W, VMs=1
+2025-09-10 10:05:24,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:24,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:24,722 - DEBUG - Collected power: core=0.8101W, package=1.3837W, VMs=1
+2025-09-10 10:05:25,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:25,718 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:25,749 - DEBUG - Collected power: core=0.6970W, package=1.1866W, VMs=1
+2025-09-10 10:05:26,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:26,678 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:26,712 - DEBUG - Collected power: core=0.6970W, package=1.1866W, VMs=1
+2025-09-10 10:05:27,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:27,695 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:27,728 - DEBUG - Collected power: core=0.6342W, package=1.0825W, VMs=1
+2025-09-10 10:05:28,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:28,705 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:28,747 - DEBUG - Collected power: core=0.7237W, package=1.2120W, VMs=1
+2025-09-10 10:05:29,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:29,680 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:29,714 - DEBUG - Collected power: core=0.7237W, package=1.2120W, VMs=1
+2025-09-10 10:05:30,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:30,732 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:30,764 - DEBUG - Collected power: core=0.7278W, package=1.2534W, VMs=1
+2025-09-10 10:05:31,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:31,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:31,714 - DEBUG - Collected power: core=0.7278W, package=1.2534W, VMs=1
+2025-09-10 10:05:32,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:32,697 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:32,728 - DEBUG - Collected power: core=0.6792W, package=1.1086W, VMs=1
+2025-09-10 10:05:33,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:33,722 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:33,764 - DEBUG - Collected power: core=0.8172W, package=1.3416W, VMs=1
+2025-09-10 10:05:34,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:34,704 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:34,741 - DEBUG - Collected power: core=0.8172W, package=1.3416W, VMs=1
+2025-09-10 10:05:35,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:35,724 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:35,758 - DEBUG - Collected power: core=0.7500W, package=1.2164W, VMs=1
+2025-09-10 10:05:36,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:36,695 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:36,747 - DEBUG - Collected power: core=0.7500W, package=1.2164W, VMs=1
+2025-09-10 10:05:37,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:37,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:37,740 - DEBUG - Collected power: core=0.8958W, package=1.4726W, VMs=1
+2025-09-10 10:05:38,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:38,744 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:38,781 - DEBUG - Collected power: core=0.8302W, package=1.3214W, VMs=1
+2025-09-10 10:05:39,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:39,704 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:39,740 - DEBUG - Collected power: core=0.8302W, package=1.3214W, VMs=1
+2025-09-10 10:05:40,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:40,724 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:40,766 - DEBUG - Collected power: core=1.1304W, package=1.8358W, VMs=1
+2025-09-10 10:05:41,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:41,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:41,714 - DEBUG - Collected power: core=1.1304W, package=1.8358W, VMs=1
+2025-09-10 10:05:42,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:42,677 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:42,707 - DEBUG - Collected power: core=0.8870W, package=1.5049W, VMs=1
+2025-09-10 10:05:43,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:43,717 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:43,752 - DEBUG - Collected power: core=0.9520W, package=1.5644W, VMs=1
+2025-09-10 10:05:44,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:44,699 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:44,730 - DEBUG - Collected power: core=0.9520W, package=1.5644W, VMs=1
+2025-09-10 10:05:45,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:45,726 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:45,754 - DEBUG - Collected power: core=0.7436W, package=1.2664W, VMs=1
+2025-09-10 10:05:46,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:46,695 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:46,736 - DEBUG - Collected power: core=0.7436W, package=1.2664W, VMs=1
+2025-09-10 10:05:47,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:47,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:47,728 - DEBUG - Collected power: core=0.8391W, package=1.3828W, VMs=1
+2025-09-10 10:05:48,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:48,712 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:48,741 - DEBUG - Collected power: core=0.9452W, package=1.5327W, VMs=1
+2025-09-10 10:05:49,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:49,698 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:49,728 - DEBUG - Collected power: core=0.9452W, package=1.5327W, VMs=1
+2025-09-10 10:05:50,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:50,728 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:50,759 - DEBUG - Collected power: core=0.8939W, package=1.4704W, VMs=1
+2025-09-10 10:05:51,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:51,695 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:51,729 - DEBUG - Collected power: core=0.8939W, package=1.4704W, VMs=1
+2025-09-10 10:05:52,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:52,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:52,717 - DEBUG - Collected power: core=0.8924W, package=1.4611W, VMs=1
+2025-09-10 10:05:53,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:53,744 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:53,785 - DEBUG - Collected power: core=0.8950W, package=1.4790W, VMs=1
+2025-09-10 10:05:54,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:54,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:54,731 - DEBUG - Collected power: core=0.8950W, package=1.4790W, VMs=1
+2025-09-10 10:05:55,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:55,710 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:55,741 - DEBUG - Collected power: core=0.8842W, package=1.4424W, VMs=1
+2025-09-10 10:05:56,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:56,678 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:56,707 - DEBUG - Collected power: core=0.8842W, package=1.4424W, VMs=1
+2025-09-10 10:05:57,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:57,701 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:57,741 - DEBUG - Collected power: core=0.8786W, package=1.4364W, VMs=1
+2025-09-10 10:05:58,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:58,731 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:58,763 - DEBUG - Collected power: core=0.7920W, package=1.2713W, VMs=1
+2025-09-10 10:05:59,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:05:59,693 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:05:59,730 - DEBUG - Collected power: core=0.7920W, package=1.2713W, VMs=1
+2025-09-10 10:06:00,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:00,707 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:00,742 - DEBUG - Collected power: core=1.1392W, package=1.8976W, VMs=1
+2025-09-10 10:06:01,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:01,690 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:01,736 - DEBUG - Collected power: core=1.1392W, package=1.8976W, VMs=1
+2025-09-10 10:06:01,737 - INFO - Collected 200 power measurements, latest: core=1.1392W, package=1.8976W, VMs=1
+2025-09-10 10:06:02,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:02,684 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:02,720 - DEBUG - Collected power: core=0.9199W, package=1.4853W, VMs=1
+2025-09-10 10:06:03,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:03,713 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:03,743 - DEBUG - Collected power: core=1.0526W, package=1.6978W, VMs=1
+2025-09-10 10:06:04,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:04,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:04,736 - DEBUG - Collected power: core=1.0526W, package=1.6978W, VMs=1
+2025-09-10 10:06:05,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:05,720 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:05,757 - DEBUG - Collected power: core=0.9613W, package=1.5478W, VMs=1
+2025-09-10 10:06:06,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:06,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:06,730 - DEBUG - Collected power: core=0.9613W, package=1.5478W, VMs=1
+2025-09-10 10:06:07,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:07,692 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:07,732 - DEBUG - Collected power: core=0.9410W, package=1.5392W, VMs=1
+2025-09-10 10:06:08,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:08,725 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:08,759 - DEBUG - Collected power: core=1.0431W, package=1.6749W, VMs=1
+2025-09-10 10:06:09,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:09,684 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:09,713 - DEBUG - Collected power: core=1.0431W, package=1.6749W, VMs=1
+2025-09-10 10:06:10,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:10,720 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:10,760 - DEBUG - Collected power: core=1.0432W, package=1.6922W, VMs=1
+2025-09-10 10:06:11,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:11,695 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:11,735 - DEBUG - Collected power: core=1.0432W, package=1.6922W, VMs=1
+2025-09-10 10:06:12,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:12,685 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:12,729 - DEBUG - Collected power: core=0.9953W, package=1.6010W, VMs=1
+2025-09-10 10:06:13,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:13,718 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:13,760 - DEBUG - Collected power: core=1.0061W, package=1.6219W, VMs=1
+2025-09-10 10:06:14,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:14,698 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:14,731 - DEBUG - Collected power: core=1.0061W, package=1.6219W, VMs=1
+2025-09-10 10:06:15,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:15,721 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:15,766 - DEBUG - Collected power: core=0.9632W, package=1.5815W, VMs=1
+2025-09-10 10:06:16,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:16,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:16,730 - DEBUG - Collected power: core=0.9632W, package=1.5815W, VMs=1
+2025-09-10 10:06:17,644 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:17,681 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:17,712 - DEBUG - Collected power: core=1.0135W, package=1.6161W, VMs=1
+2025-09-10 10:06:18,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:18,737 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:18,780 - DEBUG - Collected power: core=1.1477W, package=1.8044W, VMs=1
+2025-09-10 10:06:19,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:19,694 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:19,730 - DEBUG - Collected power: core=1.1477W, package=1.8044W, VMs=1
+2025-09-10 10:06:20,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:20,738 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:20,786 - DEBUG - Collected power: core=1.1272W, package=1.7888W, VMs=1
+2025-09-10 10:06:21,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:21,689 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:21,735 - DEBUG - Collected power: core=1.1272W, package=1.7888W, VMs=1
+2025-09-10 10:06:22,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:22,693 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:22,724 - DEBUG - Collected power: core=1.0891W, package=1.7291W, VMs=1
+2025-09-10 10:06:23,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:23,729 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:23,762 - DEBUG - Collected power: core=1.1329W, package=1.8074W, VMs=1
+2025-09-10 10:06:24,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:24,691 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:24,731 - DEBUG - Collected power: core=1.1329W, package=1.8074W, VMs=1
+2025-09-10 10:06:25,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:25,731 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:25,760 - DEBUG - Collected power: core=1.0212W, package=1.6026W, VMs=1
+2025-09-10 10:06:26,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:26,692 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:26,726 - DEBUG - Collected power: core=1.0212W, package=1.6026W, VMs=1
+2025-09-10 10:06:27,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:27,692 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:27,724 - DEBUG - Collected power: core=1.2231W, package=1.9596W, VMs=1
+2025-09-10 10:06:28,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:28,718 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:28,754 - DEBUG - Collected power: core=1.1003W, package=1.7460W, VMs=1
+2025-09-10 10:06:29,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:29,686 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:29,724 - DEBUG - Collected power: core=1.1003W, package=1.7460W, VMs=1
+2025-09-10 10:06:30,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:30,720 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:30,754 - DEBUG - Collected power: core=1.2035W, package=1.9372W, VMs=1
+2025-09-10 10:06:31,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:31,696 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:31,739 - DEBUG - Collected power: core=1.2035W, package=1.9372W, VMs=1
+2025-09-10 10:06:32,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:32,697 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:32,740 - DEBUG - Collected power: core=1.0375W, package=1.6049W, VMs=1
+2025-09-10 10:06:33,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:33,720 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:33,760 - DEBUG - Collected power: core=1.3743W, package=2.1486W, VMs=1
+2025-09-10 10:06:34,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:34,692 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:34,727 - DEBUG - Collected power: core=1.3743W, package=2.1486W, VMs=1
+2025-09-10 10:06:35,642 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:35,713 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:35,755 - DEBUG - Collected power: core=1.2834W, package=2.0104W, VMs=1
+2025-09-10 10:06:36,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:36,702 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:36,742 - DEBUG - Collected power: core=1.2834W, package=2.0104W, VMs=1
+2025-09-10 10:06:37,644 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:37,720 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:37,757 - DEBUG - Collected power: core=1.0402W, package=1.6179W, VMs=1
+2025-09-10 10:06:38,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:38,775 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:38,823 - DEBUG - Collected power: core=1.3115W, package=2.0132W, VMs=1
+2025-09-10 10:06:39,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:39,718 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:39,769 - DEBUG - Collected power: core=1.3115W, package=2.0132W, VMs=1
+2025-09-10 10:06:40,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:40,747 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:40,795 - DEBUG - Collected power: core=1.4722W, package=2.2818W, VMs=1
+2025-09-10 10:06:41,644 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:41,731 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:41,784 - DEBUG - Collected power: core=1.4722W, package=2.2818W, VMs=1
+2025-09-10 10:06:42,643 - DEBUG - Starting new HTTP connection (1): localhost:28283
+2025-09-10 10:06:42,714 - DEBUG - http://localhost:28283 "GET /metrics HTTP/1.1" 200 None
+2025-09-10 10:06:42,760 - DEBUG - Collected power: core=1.2764W, package=1.9613W, VMs=1
+2025-09-10 10:07:51,598 - DEBUG - Collection running 67.958s behind schedule
+2025-09-10 10:07:51,599 - INFO - Power collection completed: 241 points collected, 0 errors
+2025-09-10 10:07:51,620 - INFO - Saved 241 power measurements to CSV: data/bm_power_training_20250910_100240.csv
+2025-09-10 10:07:51,665 - INFO - Saved 241 power measurements to JSON: data/bm_power_training_20250910_100240.json
+2025-09-10 10:07:51,665 - INFO - Power data collection completed successfully
