@@ -163,11 +163,13 @@ class TrainingDataOrchestrator:
         try:
             if background:
                 # For background processes, use nohup and redirect output
-                bg_command = f"cd {self.vm_project_path} && nohup {command} > /tmp/vm_process.log 2>&1 & echo $!"
-                stdin, stdout, stderr = self.ssh_client.exec_command(bg_command)
-                pid = stdout.read().decode().strip()
-                logger.info(f"Started background VM process with PID: {pid}")
-                return (pid, "", "")
+                bg_command = f"cd {self.vm_project_path} && nohup {command} > /tmp/vm_process.log 2>&1 &"
+                # stdin, stdout, stderr = self.ssh_client.exec_command(bg_command)
+                self.ssh_client.exec_command(bg_command)
+                # pid = stdout.read().decode().strip()
+                # logger.info(f"Started background VM process with PID: {pid}")
+                logger.info(f"Started background VM process")
+                return ("", "", "")
             else:
                 stdin, stdout, stderr = self.ssh_client.exec_command(f"cd {self.vm_project_path} && {command}")
                 stdout_text = stdout.read().decode()
@@ -352,7 +354,7 @@ class TrainingDataOrchestrator:
             
             # 4. Start VM stress workloads first (they run continuously)
             # Give stress workloads extra time to ensure they outlast collectors
-            stress_duration = duration + 10  # Extra 60 seconds
+            stress_duration = duration + 10  # Extra 10 seconds
             if not self.start_vm_stress_workloads(workloads, cpu_intensive_duration, stress_duration):
                 raise RuntimeError("Failed to start VM stress workloads")
             
@@ -370,8 +372,10 @@ class TrainingDataOrchestrator:
             logger.info(f"All processes started - they will run for {duration}s and finish automatically")
             
             # Wait for baremetal process to complete (it will finish when done)
-            if self.bm_power_process:
-                self.bm_power_process.wait()
+            # if self.bm_power_process:
+            #     self.bm_power_process.wait()
+            # wait 
+            time.sleep(stress_duration)
             
             # 9. Copy VM data to local machine
             logger.info("Copying VM data to local machine...")
