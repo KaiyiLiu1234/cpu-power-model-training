@@ -231,7 +231,7 @@ class TrainingDataOrchestrator:
             collector_cmd = (f"python3 vm_feature_collector/src/vm_feature_collector.py "
                            f"--duration {duration} --interval {self.interval} --output {output_file}")
             
-            logger.info(f"Starting VM feature collection for {duration}s")
+            logger.info(f"Starting VM feature collection for {duration}s (auto-detecting cores)")
             self.vm_collector_process = self._execute_vm_command(collector_cmd, background=True)
             return True
             
@@ -371,11 +371,28 @@ class TrainingDataOrchestrator:
             
             logger.info(f"All processes started - they will run for {duration}s and finish automatically")
             
-            # Wait for baremetal process to complete (it will finish when done)
-            # if self.bm_power_process:
-            #     self.bm_power_process.wait()
-            # wait 
-            time.sleep(stress_duration)
+            # Wait for the expected collection duration plus a small buffer
+            # Both VM and BM collectors should finish around the same time now
+            collection_timeout = duration + 10  # Allow 10 seconds buffer
+            logger.info(f"Waiting {collection_timeout}s for data collection to complete...")
+            
+            if self.bm_power_process:
+                try:
+                    # Wait for BM process with timeout
+                    self.bm_power_process.wait(timeout=collection_timeout)
+                    logger.info("BM power collection process completed")
+                except subprocess.TimeoutExpired:
+                    logger.warning(f"BM power collection exceeded {collection_timeout}s timeout, terminating...")
+                    self.bm_power_process.terminate()
+                    try:
+                        self.bm_power_process.wait(timeout=5)
+                    except subprocess.TimeoutExpired:
+                        logger.warning("Force killing BM power process")
+                        self.bm_power_process.kill()
+                        self.bm_power_process.wait()
+            else:
+                # Fallback if no BM process
+                time.sleep(collection_timeout)
             
             # 9. Copy VM data to local machine (both JSON and CSV)
             logger.info("Copying VM data to local machine...")

@@ -100,6 +100,9 @@ class BaremetalPowerCollector:
         # Relative timing
         self.collection_start_time: Optional[float] = None
         
+        # HTTP session for connection reuse to reduce latency
+        self.session = requests.Session()
+        
         # Signal handling for graceful shutdown
         self._shutdown_requested = False
         signal.signal(signal.SIGINT, self._signal_handler)
@@ -216,7 +219,8 @@ class BaremetalPowerCollector:
         """Collect power metrics from Kepler for target VMs"""
         for attempt in range(self.max_retries):
             try:
-                response = requests.get(self.kepler_url, timeout=5)
+                # Use session for connection reuse and shorter timeout to reduce latency
+                response = self.session.get(self.kepler_url, timeout=2)
                 response.raise_for_status()
                 
                 # Parse VM metrics
@@ -298,8 +302,16 @@ class BaremetalPowerCollector:
         collection_count = 0
         error_count = 0
         
+        # Calculate the expected number of data points based on duration and interval
+        expected_points = int(duration / self.collection_interval)
+        logger.info(f"Target: {expected_points} data points over {duration}s at {self.collection_interval}s intervals")
+        
+        # Use time-based termination like VM collector for synchronization
         while self.collection_active and (time.time() - start_time) < duration:
             try:
+                # Track collection count for logging
+                elapsed_time = time.time() - start_time
+                
                 data_point = self.collect_power_metrics()
                 
                 if data_point:
@@ -307,7 +319,8 @@ class BaremetalPowerCollector:
                     collection_count += 1
                     
                     if collection_count % 50 == 0:  # Log every 5 seconds at 100ms interval
-                        logger.info(f"Collected {collection_count} power measurements, "
+                        logger.info(f"Collected {collection_count} power measurements "
+                                  f"({elapsed_time:.1f}s/{duration}s), "
                                   f"latest: core={data_point.total_cpu_watts_core:.4f}W, "
                                   f"package={data_point.total_cpu_watts_package:.4f}W, "
                                   f"VMs={data_point.vm_count}")
@@ -315,12 +328,17 @@ class BaremetalPowerCollector:
                     error_count += 1
                 
                 # Sleep until next collection interval
-                next_collection = start_time + (collection_count + error_count + 1) * self.collection_interval
-                sleep_time = next_collection - time.time()
+                # Calculate when the next collection should start to maintain consistent intervals
+                # even with HTTP latency variations
+                expected_next_start = start_time + (collection_count + error_count) * self.collection_interval
+                current_time = time.time()
+                sleep_time = expected_next_start - current_time
+                
                 if sleep_time > 0:
                     time.sleep(sleep_time)
-                elif sleep_time < -0.1:  # If we're significantly behind schedule
+                elif sleep_time < -0.5:  # If we're more than 0.5s behind, log it but continue
                     logger.debug(f"Collection running {-sleep_time:.3f}s behind schedule")
+                # Don't sleep if we're behind schedule, just continue immediately
                     
             except KeyboardInterrupt:
                 logger.info("Power collection interrupted by user")
@@ -333,6 +351,9 @@ class BaremetalPowerCollector:
         self.collection_active = False
         
         logger.info(f"Power collection completed: {collection_count} points collected, {error_count} errors")
+        
+        # Close HTTP session
+        self.session.close()
         
         # Save data if output file specified
         if output_file and self.power_data:
