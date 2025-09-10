@@ -1,0 +1,6183 @@
+[
+  {
+    "timestamp": 0.08866190910339355,
+    "timestamp_absolute": 1757530798.959797,
+    "timestamp_iso": "2025-09-10T14:59:58.959797",
+    "total_cpu_watts_core": 0.13431399673390113,
+    "total_cpu_watts_package": 0.27184026390222604,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.13431399673390113,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.27184026390222604,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 1.1322498321533203,
+    "timestamp_absolute": 1757530800.0033848,
+    "timestamp_iso": "2025-09-10T15:00:00.003385",
+    "total_cpu_watts_core": 0.07747886016901954,
+    "total_cpu_watts_package": 0.1754562323307965,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.07747886016901954,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.1754562323307965,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 2.121859073638916,
+    "timestamp_absolute": 1757530800.992994,
+    "timestamp_iso": "2025-09-10T15:00:00.992994",
+    "total_cpu_watts_core": 0.07747886016901954,
+    "total_cpu_watts_package": 0.1754562323307965,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.07747886016901954,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.1754562323307965,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 3.1069183349609375,
+    "timestamp_absolute": 1757530801.9780533,
+    "timestamp_iso": "2025-09-10T15:00:01.978053",
+    "total_cpu_watts_core": 0.020318603301042307,
+    "total_cpu_watts_package": 0.04101171999188341,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.020318603301042307,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.04101171999188341,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 4.109189033508301,
+    "timestamp_absolute": 1757530802.980324,
+    "timestamp_iso": "2025-09-10T15:00:02.980324",
+    "total_cpu_watts_core": 0.020318603301042307,
+    "total_cpu_watts_package": 0.04101171999188341,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.020318603301042307,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.04101171999188341,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 5.120732545852661,
+    "timestamp_absolute": 1757530803.9918675,
+    "timestamp_iso": "2025-09-10T15:00:03.991868",
+    "total_cpu_watts_core": 0.009133109094592721,
+    "total_cpu_watts_package": 0.019788143952114857,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.009133109094592721,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.019788143952114857,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 6.087884426116943,
+    "timestamp_absolute": 1757530804.9590194,
+    "timestamp_iso": "2025-09-10T15:00:04.959019",
+    "total_cpu_watts_core": 0.009133109094592721,
+    "total_cpu_watts_package": 0.019788143952114857,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.009133109094592721,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.019788143952114857,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 7.126288652420044,
+    "timestamp_absolute": 1757530805.9974236,
+    "timestamp_iso": "2025-09-10T15:00:05.997424",
+    "total_cpu_watts_core": 0.012283745301165527,
+    "total_cpu_watts_package": 0.028896302836014614,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.012283745301165527,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.028896302836014614,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 8.084494590759277,
+    "timestamp_absolute": 1757530806.9556296,
+    "timestamp_iso": "2025-09-10T15:00:06.955630",
+    "total_cpu_watts_core": 0.012283745301165527,
+    "total_cpu_watts_package": 0.028896302836014614,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.012283745301165527,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.028896302836014614,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 9.110816955566406,
+    "timestamp_absolute": 1757530807.981952,
+    "timestamp_iso": "2025-09-10T15:00:07.981952",
+    "total_cpu_watts_core": 0.005217771690693817,
+    "total_cpu_watts_package": 0.011285136973026869,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.005217771690693817,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.011285136973026869,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 10.117343664169312,
+    "timestamp_absolute": 1757530808.9884787,
+    "timestamp_iso": "2025-09-10T15:00:08.988479",
+    "total_cpu_watts_core": 0.00921590459356723,
+    "total_cpu_watts_package": 0.020466894220787683,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.00921590459356723,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.020466894220787683,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 11.089528799057007,
+    "timestamp_absolute": 1757530809.9606638,
+    "timestamp_iso": "2025-09-10T15:00:09.960664",
+    "total_cpu_watts_core": 0.00921590459356723,
+    "total_cpu_watts_package": 0.020466894220787683,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.00921590459356723,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.020466894220787683,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 12.115678548812866,
+    "timestamp_absolute": 1757530810.9868135,
+    "timestamp_iso": "2025-09-10T15:00:10.986814",
+    "total_cpu_watts_core": 0.011860773101251724,
+    "total_cpu_watts_package": 0.028344806831218525,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.011860773101251724,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.028344806831218525,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 13.096702814102173,
+    "timestamp_absolute": 1757530811.9678378,
+    "timestamp_iso": "2025-09-10T15:00:11.967838",
+    "total_cpu_watts_core": 0.011860773101251724,
+    "total_cpu_watts_package": 0.028344806831218525,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.011860773101251724,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.028344806831218525,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 14.108097791671753,
+    "timestamp_absolute": 1757530812.9792328,
+    "timestamp_iso": "2025-09-10T15:00:12.979233",
+    "total_cpu_watts_core": 0.01647689335138176,
+    "total_cpu_watts_package": 0.03593527428969442,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.01647689335138176,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.03593527428969442,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 15.122737407684326,
+    "timestamp_absolute": 1757530813.9938724,
+    "timestamp_iso": "2025-09-10T15:00:13.993872",
+    "total_cpu_watts_core": 0.11090399407245458,
+    "total_cpu_watts_package": 0.2237006062043543,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.11090399407245458,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.2237006062043543,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 16.0901460647583,
+    "timestamp_absolute": 1757530814.961281,
+    "timestamp_iso": "2025-09-10T15:00:14.961281",
+    "total_cpu_watts_core": 0.11090399407245458,
+    "total_cpu_watts_package": 0.2237006062043543,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.11090399407245458,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.2237006062043543,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 17.12335705757141,
+    "timestamp_absolute": 1757530815.994492,
+    "timestamp_iso": "2025-09-10T15:00:15.994492",
+    "total_cpu_watts_core": 0.07335812487992156,
+    "total_cpu_watts_package": 0.16310447293410632,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.07335812487992156,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.16310447293410632,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 18.157368183135986,
+    "timestamp_absolute": 1757530817.0285032,
+    "timestamp_iso": "2025-09-10T15:00:17.028503",
+    "total_cpu_watts_core": 0.07335812487992156,
+    "total_cpu_watts_package": 0.16310447293410632,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.07335812487992156,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.16310447293410632,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 19.243175506591797,
+    "timestamp_absolute": 1757530818.1143105,
+    "timestamp_iso": "2025-09-10T15:00:18.114311",
+    "total_cpu_watts_core": 0.03539304288018848,
+    "total_cpu_watts_package": 0.05583875114001341,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.03539304288018848,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.05583875114001341,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 20.177993774414062,
+    "timestamp_absolute": 1757530819.0491288,
+    "timestamp_iso": "2025-09-10T15:00:19.049129",
+    "total_cpu_watts_core": 0.03539304288018848,
+    "total_cpu_watts_package": 0.05583875114001341,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.03539304288018848,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.05583875114001341,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 21.146045684814453,
+    "timestamp_absolute": 1757530820.0171807,
+    "timestamp_iso": "2025-09-10T15:00:20.017181",
+    "total_cpu_watts_core": 0.06427306949101615,
+    "total_cpu_watts_package": 0.0921567541912694,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.06427306949101615,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.0921567541912694,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 22.100873470306396,
+    "timestamp_absolute": 1757530820.9720085,
+    "timestamp_iso": "2025-09-10T15:00:20.972008",
+    "total_cpu_watts_core": 0.06427306949101615,
+    "total_cpu_watts_package": 0.0921567541912694,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.06427306949101615,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.0921567541912694,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 23.12936282157898,
+    "timestamp_absolute": 1757530822.0004978,
+    "timestamp_iso": "2025-09-10T15:00:22.000498",
+    "total_cpu_watts_core": 0.2829959943507792,
+    "total_cpu_watts_package": 0.4867846916192615,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2829959943507792,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.4867846916192615,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 24.122114658355713,
+    "timestamp_absolute": 1757530822.9932497,
+    "timestamp_iso": "2025-09-10T15:00:22.993250",
+    "total_cpu_watts_core": 0.2829959943507792,
+    "total_cpu_watts_package": 0.4867846916192615,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2829959943507792,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.4867846916192615,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 25.142149925231934,
+    "timestamp_absolute": 1757530824.013285,
+    "timestamp_iso": "2025-09-10T15:00:24.013285",
+    "total_cpu_watts_core": 0.08915576295562716,
+    "total_cpu_watts_package": 0.15605646374715662,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.08915576295562716,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.15605646374715662,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 26.09638023376465,
+    "timestamp_absolute": 1757530824.9675152,
+    "timestamp_iso": "2025-09-10T15:00:24.967515",
+    "total_cpu_watts_core": 0.08915576295562716,
+    "total_cpu_watts_package": 0.15605646374715662,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.08915576295562716,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.15605646374715662,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 27.125373601913452,
+    "timestamp_absolute": 1757530825.9965086,
+    "timestamp_iso": "2025-09-10T15:00:25.996509",
+    "total_cpu_watts_core": 0.08457680344417871,
+    "total_cpu_watts_package": 0.16139279582362956,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.08457680344417871,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.16139279582362956,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 28.100752353668213,
+    "timestamp_absolute": 1757530826.9718874,
+    "timestamp_iso": "2025-09-10T15:00:26.971887",
+    "total_cpu_watts_core": 0.08457680344417871,
+    "total_cpu_watts_package": 0.16139279582362956,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.08457680344417871,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.16139279582362956,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 29.099388599395752,
+    "timestamp_absolute": 1757530827.9705236,
+    "timestamp_iso": "2025-09-10T15:00:27.970524",
+    "total_cpu_watts_core": 0.1038071912552322,
+    "total_cpu_watts_package": 0.20691464804215284,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.1038071912552322,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.20691464804215284,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 30.117187023162842,
+    "timestamp_absolute": 1757530828.988322,
+    "timestamp_iso": "2025-09-10T15:00:28.988322",
+    "total_cpu_watts_core": 0.07934095784963183,
+    "total_cpu_watts_package": 0.17079385458750204,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.07934095784963183,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.17079385458750204,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 31.097426891326904,
+    "timestamp_absolute": 1757530829.968562,
+    "timestamp_iso": "2025-09-10T15:00:29.968562",
+    "total_cpu_watts_core": 0.07934095784963183,
+    "total_cpu_watts_package": 0.17079385458750204,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.07934095784963183,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.17079385458750204,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 32.12355923652649,
+    "timestamp_absolute": 1757530830.9946942,
+    "timestamp_iso": "2025-09-10T15:00:30.994694",
+    "total_cpu_watts_core": 0.0947451031704546,
+    "total_cpu_watts_package": 0.1798919343785811,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.0947451031704546,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.1798919343785811,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 33.10000514984131,
+    "timestamp_absolute": 1757530831.9711401,
+    "timestamp_iso": "2025-09-10T15:00:31.971140",
+    "total_cpu_watts_core": 0.0947451031704546,
+    "total_cpu_watts_package": 0.1798919343785811,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.0947451031704546,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.1798919343785811,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 34.152464628219604,
+    "timestamp_absolute": 1757530833.0235996,
+    "timestamp_iso": "2025-09-10T15:00:33.023600",
+    "total_cpu_watts_core": 0.1901232250258504,
+    "total_cpu_watts_package": 0.372004068483557,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.1901232250258504,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.372004068483557,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 35.14185452461243,
+    "timestamp_absolute": 1757530834.0129895,
+    "timestamp_iso": "2025-09-10T15:00:34.012990",
+    "total_cpu_watts_core": 0.10096671470755052,
+    "total_cpu_watts_package": 0.21567168009354076,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.10096671470755052,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.21567168009354076,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 36.095762729644775,
+    "timestamp_absolute": 1757530834.9668977,
+    "timestamp_iso": "2025-09-10T15:00:34.966898",
+    "total_cpu_watts_core": 0.10096671470755052,
+    "total_cpu_watts_package": 0.21567168009354076,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.10096671470755052,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.21567168009354076,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 37.135231733322144,
+    "timestamp_absolute": 1757530836.0063667,
+    "timestamp_iso": "2025-09-10T15:00:36.006367",
+    "total_cpu_watts_core": 0.09749652735083825,
+    "total_cpu_watts_package": 0.20105112742346934,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.09749652735083825,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.20105112742346934,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 38.084025382995605,
+    "timestamp_absolute": 1757530836.9551604,
+    "timestamp_iso": "2025-09-10T15:00:36.955160",
+    "total_cpu_watts_core": 0.09749652735083825,
+    "total_cpu_watts_package": 0.20105112742346934,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.09749652735083825,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.20105112742346934,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 39.10808849334717,
+    "timestamp_absolute": 1757530837.9792235,
+    "timestamp_iso": "2025-09-10T15:00:37.979223",
+    "total_cpu_watts_core": 0.09180150588884188,
+    "total_cpu_watts_package": 0.18334141110532415,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.09180150588884188,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.18334141110532415,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 40.1192581653595,
+    "timestamp_absolute": 1757530838.9903932,
+    "timestamp_iso": "2025-09-10T15:00:38.990393",
+    "total_cpu_watts_core": 0.1325275755702147,
+    "total_cpu_watts_package": 0.2685760777092786,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.1325275755702147,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.2685760777092786,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 41.08787202835083,
+    "timestamp_absolute": 1757530839.959007,
+    "timestamp_iso": "2025-09-10T15:00:39.959007",
+    "total_cpu_watts_core": 0.1325275755702147,
+    "total_cpu_watts_package": 0.2685760777092786,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.1325275755702147,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.2685760777092786,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 42.11345314979553,
+    "timestamp_absolute": 1757530840.9845881,
+    "timestamp_iso": "2025-09-10T15:00:40.984588",
+    "total_cpu_watts_core": 0.12563814988042815,
+    "total_cpu_watts_package": 0.2729951020674231,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.12563814988042815,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.2729951020674231,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 43.08941388130188,
+    "timestamp_absolute": 1757530841.9605489,
+    "timestamp_iso": "2025-09-10T15:00:41.960549",
+    "total_cpu_watts_core": 0.12563814988042815,
+    "total_cpu_watts_package": 0.2729951020674231,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.12563814988042815,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.2729951020674231,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 44.115185499191284,
+    "timestamp_absolute": 1757530842.9863205,
+    "timestamp_iso": "2025-09-10T15:00:42.986320",
+    "total_cpu_watts_core": 0.08762103548923339,
+    "total_cpu_watts_package": 0.1730420408602141,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.08762103548923339,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.1730420408602141,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 45.14936327934265,
+    "timestamp_absolute": 1757530844.0204983,
+    "timestamp_iso": "2025-09-10T15:00:44.020498",
+    "total_cpu_watts_core": 0.15913018275622384,
+    "total_cpu_watts_package": 0.33395774821555524,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.15913018275622384,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.33395774821555524,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 46.08737063407898,
+    "timestamp_absolute": 1757530844.9585056,
+    "timestamp_iso": "2025-09-10T15:00:44.958506",
+    "total_cpu_watts_core": 0.15913018275622384,
+    "total_cpu_watts_package": 0.33395774821555524,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.15913018275622384,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.33395774821555524,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 47.13834547996521,
+    "timestamp_absolute": 1757530846.0094805,
+    "timestamp_iso": "2025-09-10T15:00:46.009480",
+    "total_cpu_watts_core": 0.18389481815446274,
+    "total_cpu_watts_package": 0.36576754179702764,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.18389481815446274,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.36576754179702764,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 48.100566148757935,
+    "timestamp_absolute": 1757530846.9717011,
+    "timestamp_iso": "2025-09-10T15:00:46.971701",
+    "total_cpu_watts_core": 0.18389481815446274,
+    "total_cpu_watts_package": 0.36576754179702764,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.18389481815446274,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.36576754179702764,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 49.10706639289856,
+    "timestamp_absolute": 1757530847.9782014,
+    "timestamp_iso": "2025-09-10T15:00:47.978201",
+    "total_cpu_watts_core": 0.13375640596255564,
+    "total_cpu_watts_package": 0.2597308184859215,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.13375640596255564,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.2597308184859215,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 50.11337399482727,
+    "timestamp_absolute": 1757530848.984509,
+    "timestamp_iso": "2025-09-10T15:00:48.984509",
+    "total_cpu_watts_core": 0.17782032596365566,
+    "total_cpu_watts_package": 0.3583794680390553,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.17782032596365566,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3583794680390553,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 51.11165499687195,
+    "timestamp_absolute": 1757530849.98279,
+    "timestamp_iso": "2025-09-10T15:00:49.982790",
+    "total_cpu_watts_core": 0.17782032596365566,
+    "total_cpu_watts_package": 0.3583794680390553,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.17782032596365566,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3583794680390553,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 52.12065839767456,
+    "timestamp_absolute": 1757530850.9917934,
+    "timestamp_iso": "2025-09-10T15:00:50.991793",
+    "total_cpu_watts_core": 0.17744881193333156,
+    "total_cpu_watts_package": 0.3599126782188928,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.17744881193333156,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3599126782188928,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 53.08848834037781,
+    "timestamp_absolute": 1757530851.9596233,
+    "timestamp_iso": "2025-09-10T15:00:51.959623",
+    "total_cpu_watts_core": 0.17744881193333156,
+    "total_cpu_watts_package": 0.3599126782188928,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.17744881193333156,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3599126782188928,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 54.10931897163391,
+    "timestamp_absolute": 1757530852.980454,
+    "timestamp_iso": "2025-09-10T15:00:52.980454",
+    "total_cpu_watts_core": 0.14316201631035932,
+    "total_cpu_watts_package": 0.2754491295630762,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.14316201631035932,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.2754491295630762,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 55.138081789016724,
+    "timestamp_absolute": 1757530854.0092168,
+    "timestamp_iso": "2025-09-10T15:00:54.009217",
+    "total_cpu_watts_core": 0.1731417566445035,
+    "total_cpu_watts_package": 0.333249777985119,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.1731417566445035,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.333249777985119,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 56.0882351398468,
+    "timestamp_absolute": 1757530854.9593701,
+    "timestamp_iso": "2025-09-10T15:00:54.959370",
+    "total_cpu_watts_core": 0.1731417566445035,
+    "total_cpu_watts_package": 0.333249777985119,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.1731417566445035,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.333249777985119,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 57.11492443084717,
+    "timestamp_absolute": 1757530855.9860594,
+    "timestamp_iso": "2025-09-10T15:00:55.986059",
+    "total_cpu_watts_core": 0.21279687669785535,
+    "total_cpu_watts_package": 0.4286759787598947,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.21279687669785535,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.4286759787598947,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 58.08525538444519,
+    "timestamp_absolute": 1757530856.9563904,
+    "timestamp_iso": "2025-09-10T15:00:56.956390",
+    "total_cpu_watts_core": 0.21279687669785535,
+    "total_cpu_watts_package": 0.4286759787598947,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.21279687669785535,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.4286759787598947,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 59.1001079082489,
+    "timestamp_absolute": 1757530857.971243,
+    "timestamp_iso": "2025-09-10T15:00:57.971243",
+    "total_cpu_watts_core": 0.13838472369583335,
+    "total_cpu_watts_package": 0.27051814807842217,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.13838472369583335,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.27051814807842217,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 60.11452555656433,
+    "timestamp_absolute": 1757530858.9856606,
+    "timestamp_iso": "2025-09-10T15:00:58.985661",
+    "total_cpu_watts_core": 0.17525443118304018,
+    "total_cpu_watts_package": 0.3547341429984232,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.17525443118304018,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3547341429984232,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 61.098655462265015,
+    "timestamp_absolute": 1757530859.9697905,
+    "timestamp_iso": "2025-09-10T15:00:59.969790",
+    "total_cpu_watts_core": 0.17525443118304018,
+    "total_cpu_watts_package": 0.3547341429984232,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.17525443118304018,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3547341429984232,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 62.11922883987427,
+    "timestamp_absolute": 1757530860.9903638,
+    "timestamp_iso": "2025-09-10T15:01:00.990364",
+    "total_cpu_watts_core": 0.17892624615537125,
+    "total_cpu_watts_package": 0.3560507032033096,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.17892624615537125,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3560507032033096,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 63.09342837333679,
+    "timestamp_absolute": 1757530861.9645634,
+    "timestamp_iso": "2025-09-10T15:01:01.964563",
+    "total_cpu_watts_core": 0.17892624615537125,
+    "total_cpu_watts_package": 0.3560507032033096,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.17892624615537125,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3560507032033096,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 64.10684990882874,
+    "timestamp_absolute": 1757530862.977985,
+    "timestamp_iso": "2025-09-10T15:01:02.977985",
+    "total_cpu_watts_core": 0.2001515808437192,
+    "total_cpu_watts_package": 0.37841525624814853,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2001515808437192,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.37841525624814853,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 65.12498092651367,
+    "timestamp_absolute": 1757530863.996116,
+    "timestamp_iso": "2025-09-10T15:01:03.996116",
+    "total_cpu_watts_core": 0.2934098368785533,
+    "total_cpu_watts_package": 0.563116615999507,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2934098368785533,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.563116615999507,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 66.08287954330444,
+    "timestamp_absolute": 1757530864.9540145,
+    "timestamp_iso": "2025-09-10T15:01:04.954015",
+    "total_cpu_watts_core": 0.2934098368785533,
+    "total_cpu_watts_package": 0.563116615999507,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2934098368785533,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.563116615999507,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 67.1301372051239,
+    "timestamp_absolute": 1757530866.0012722,
+    "timestamp_iso": "2025-09-10T15:01:06.001272",
+    "total_cpu_watts_core": 0.22818065924747835,
+    "total_cpu_watts_package": 0.4479550292537141,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.22818065924747835,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.4479550292537141,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 68.12463569641113,
+    "timestamp_absolute": 1757530866.9957707,
+    "timestamp_iso": "2025-09-10T15:01:06.995771",
+    "total_cpu_watts_core": 0.22818065924747835,
+    "total_cpu_watts_package": 0.4479550292537141,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.22818065924747835,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.4479550292537141,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 69.09646391868591,
+    "timestamp_absolute": 1757530867.967599,
+    "timestamp_iso": "2025-09-10T15:01:07.967599",
+    "total_cpu_watts_core": 0.18761024282643748,
+    "total_cpu_watts_package": 0.3454554185942123,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.18761024282643748,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.3454554185942123,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 70.14467144012451,
+    "timestamp_absolute": 1757530869.0158064,
+    "timestamp_iso": "2025-09-10T15:01:09.015806",
+    "total_cpu_watts_core": 0.2918456149273059,
+    "total_cpu_watts_package": 0.5836577303598403,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2918456149273059,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5836577303598403,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 71.09740662574768,
+    "timestamp_absolute": 1757530869.9685416,
+    "timestamp_iso": "2025-09-10T15:01:09.968542",
+    "total_cpu_watts_core": 0.2918456149273059,
+    "total_cpu_watts_package": 0.5836577303598403,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2918456149273059,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5836577303598403,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 72.11393713951111,
+    "timestamp_absolute": 1757530870.9850721,
+    "timestamp_iso": "2025-09-10T15:01:10.985072",
+    "total_cpu_watts_core": 0.20501209891072272,
+    "total_cpu_watts_package": 0.40024375380821886,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.20501209891072272,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.40024375380821886,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 73.13327121734619,
+    "timestamp_absolute": 1757530872.0044062,
+    "timestamp_iso": "2025-09-10T15:01:12.004406",
+    "total_cpu_watts_core": 0.20501209891072272,
+    "total_cpu_watts_package": 0.40024375380821886,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.20501209891072272,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.40024375380821886,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 74.11078786849976,
+    "timestamp_absolute": 1757530872.9819229,
+    "timestamp_iso": "2025-09-10T15:01:12.981923",
+    "total_cpu_watts_core": 0.20771627069086643,
+    "total_cpu_watts_package": 0.38183963401121057,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.20771627069086643,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.38183963401121057,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 75.1379234790802,
+    "timestamp_absolute": 1757530874.0090585,
+    "timestamp_iso": "2025-09-10T15:01:14.009058",
+    "total_cpu_watts_core": 0.3283247954095951,
+    "total_cpu_watts_package": 0.6387341257431398,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3283247954095951,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6387341257431398,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 76.0894889831543,
+    "timestamp_absolute": 1757530874.960624,
+    "timestamp_iso": "2025-09-10T15:01:14.960624",
+    "total_cpu_watts_core": 0.3283247954095951,
+    "total_cpu_watts_package": 0.6387341257431398,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3283247954095951,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6387341257431398,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 77.18128776550293,
+    "timestamp_absolute": 1757530876.0524228,
+    "timestamp_iso": "2025-09-10T15:01:16.052423",
+    "total_cpu_watts_core": 0.2829743518570271,
+    "total_cpu_watts_package": 0.5407689863162813,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2829743518570271,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5407689863162813,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 78.08605217933655,
+    "timestamp_absolute": 1757530876.9571872,
+    "timestamp_iso": "2025-09-10T15:01:16.957187",
+    "total_cpu_watts_core": 0.2829743518570271,
+    "total_cpu_watts_package": 0.5407689863162813,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2829743518570271,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5407689863162813,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 79.12116694450378,
+    "timestamp_absolute": 1757530877.992302,
+    "timestamp_iso": "2025-09-10T15:01:17.992302",
+    "total_cpu_watts_core": 0.21499403292090577,
+    "total_cpu_watts_package": 0.39326947193690337,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.21499403292090577,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.39326947193690337,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 80.1372663974762,
+    "timestamp_absolute": 1757530879.0084014,
+    "timestamp_iso": "2025-09-10T15:01:19.008401",
+    "total_cpu_watts_core": 0.312477196341932,
+    "total_cpu_watts_package": 0.5985085366505829,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.312477196341932,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5985085366505829,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 81.11088514328003,
+    "timestamp_absolute": 1757530879.9820201,
+    "timestamp_iso": "2025-09-10T15:01:19.982020",
+    "total_cpu_watts_core": 0.312477196341932,
+    "total_cpu_watts_package": 0.5985085366505829,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.312477196341932,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5985085366505829,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 82.13791608810425,
+    "timestamp_absolute": 1757530881.009051,
+    "timestamp_iso": "2025-09-10T15:01:21.009051",
+    "total_cpu_watts_core": 0.2978284833535662,
+    "total_cpu_watts_package": 0.5707810028110426,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2978284833535662,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5707810028110426,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 83.08835363388062,
+    "timestamp_absolute": 1757530881.9594886,
+    "timestamp_iso": "2025-09-10T15:01:21.959489",
+    "total_cpu_watts_core": 0.2978284833535662,
+    "total_cpu_watts_package": 0.5707810028110426,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2978284833535662,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5707810028110426,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 84.0992226600647,
+    "timestamp_absolute": 1757530882.9703577,
+    "timestamp_iso": "2025-09-10T15:01:22.970358",
+    "total_cpu_watts_core": 0.2810451661587544,
+    "total_cpu_watts_package": 0.5096249634479277,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2810451661587544,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5096249634479277,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 85.12523365020752,
+    "timestamp_absolute": 1757530883.9963686,
+    "timestamp_iso": "2025-09-10T15:01:23.996369",
+    "total_cpu_watts_core": 0.3386353099671179,
+    "total_cpu_watts_package": 0.6433700805196452,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3386353099671179,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6433700805196452,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 86.09174466133118,
+    "timestamp_absolute": 1757530884.9628797,
+    "timestamp_iso": "2025-09-10T15:01:24.962880",
+    "total_cpu_watts_core": 0.3386353099671179,
+    "total_cpu_watts_package": 0.6433700805196452,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3386353099671179,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6433700805196452,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 87.13433170318604,
+    "timestamp_absolute": 1757530886.0054667,
+    "timestamp_iso": "2025-09-10T15:01:26.005467",
+    "total_cpu_watts_core": 0.2886833514127609,
+    "total_cpu_watts_package": 0.5473946851740188,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2886833514127609,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5473946851740188,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 88.0991427898407,
+    "timestamp_absolute": 1757530886.9702778,
+    "timestamp_iso": "2025-09-10T15:01:26.970278",
+    "total_cpu_watts_core": 0.2886833514127609,
+    "total_cpu_watts_package": 0.5473946851740188,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2886833514127609,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5473946851740188,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 89.12053394317627,
+    "timestamp_absolute": 1757530887.991669,
+    "timestamp_iso": "2025-09-10T15:01:27.991669",
+    "total_cpu_watts_core": 0.2403527938199977,
+    "total_cpu_watts_package": 0.44728396872815407,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.2403527938199977,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.44728396872815407,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 90.11252927780151,
+    "timestamp_absolute": 1757530888.9836643,
+    "timestamp_iso": "2025-09-10T15:01:28.983664",
+    "total_cpu_watts_core": 0.32259899288880434,
+    "total_cpu_watts_package": 0.607038808515466,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.32259899288880434,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.607038808515466,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 91.10217428207397,
+    "timestamp_absolute": 1757530889.9733093,
+    "timestamp_iso": "2025-09-10T15:01:29.973309",
+    "total_cpu_watts_core": 0.32259899288880434,
+    "total_cpu_watts_package": 0.607038808515466,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.32259899288880434,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.607038808515466,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 92.12497639656067,
+    "timestamp_absolute": 1757530890.9961114,
+    "timestamp_iso": "2025-09-10T15:01:30.996111",
+    "total_cpu_watts_core": 0.311010847146867,
+    "total_cpu_watts_package": 0.5620956920171045,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.311010847146867,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5620956920171045,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 93.08770489692688,
+    "timestamp_absolute": 1757530891.95884,
+    "timestamp_iso": "2025-09-10T15:01:31.958840",
+    "total_cpu_watts_core": 0.311010847146867,
+    "total_cpu_watts_package": 0.5620956920171045,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.311010847146867,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5620956920171045,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 94.11393570899963,
+    "timestamp_absolute": 1757530892.9850707,
+    "timestamp_iso": "2025-09-10T15:01:32.985071",
+    "total_cpu_watts_core": 0.3322283904393369,
+    "total_cpu_watts_package": 0.5862340456873903,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3322283904393369,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5862340456873903,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 95.13218641281128,
+    "timestamp_absolute": 1757530894.0033214,
+    "timestamp_iso": "2025-09-10T15:01:34.003321",
+    "total_cpu_watts_core": 0.45740605968693665,
+    "total_cpu_watts_package": 0.8355616648807276,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.45740605968693665,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.8355616648807276,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 96.09911012649536,
+    "timestamp_absolute": 1757530894.9702451,
+    "timestamp_iso": "2025-09-10T15:01:34.970245",
+    "total_cpu_watts_core": 0.45740605968693665,
+    "total_cpu_watts_package": 0.8355616648807276,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.45740605968693665,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.8355616648807276,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 97.11707997322083,
+    "timestamp_absolute": 1757530895.988215,
+    "timestamp_iso": "2025-09-10T15:01:35.988215",
+    "total_cpu_watts_core": 0.3697733586048895,
+    "total_cpu_watts_package": 0.6864103281292997,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3697733586048895,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6864103281292997,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 98.08465814590454,
+    "timestamp_absolute": 1757530896.9557931,
+    "timestamp_iso": "2025-09-10T15:01:36.955793",
+    "total_cpu_watts_core": 0.3697733586048895,
+    "total_cpu_watts_package": 0.6864103281292997,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3697733586048895,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6864103281292997,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 99.10052156448364,
+    "timestamp_absolute": 1757530897.9716566,
+    "timestamp_iso": "2025-09-10T15:01:37.971657",
+    "total_cpu_watts_core": 0.30295739048744863,
+    "total_cpu_watts_package": 0.5505001257778261,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.30295739048744863,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5505001257778261,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 100.12325358390808,
+    "timestamp_absolute": 1757530898.9943886,
+    "timestamp_iso": "2025-09-10T15:01:38.994389",
+    "total_cpu_watts_core": 0.37735935195546244,
+    "total_cpu_watts_package": 0.6926661556807988,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.37735935195546244,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6926661556807988,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 101.08232998847961,
+    "timestamp_absolute": 1757530899.953465,
+    "timestamp_iso": "2025-09-10T15:01:39.953465",
+    "total_cpu_watts_core": 0.37735935195546244,
+    "total_cpu_watts_package": 0.6926661556807988,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.37735935195546244,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6926661556807988,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 102.12262392044067,
+    "timestamp_absolute": 1757530900.993759,
+    "timestamp_iso": "2025-09-10T15:01:40.993759",
+    "total_cpu_watts_core": 0.3517422563050507,
+    "total_cpu_watts_package": 0.6481728526786896,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3517422563050507,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6481728526786896,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 103.08882427215576,
+    "timestamp_absolute": 1757530901.9599593,
+    "timestamp_iso": "2025-09-10T15:01:41.959959",
+    "total_cpu_watts_core": 0.3517422563050507,
+    "total_cpu_watts_package": 0.6481728526786896,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3517422563050507,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6481728526786896,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 104.10663199424744,
+    "timestamp_absolute": 1757530902.977767,
+    "timestamp_iso": "2025-09-10T15:01:42.977767",
+    "total_cpu_watts_core": 0.3296677864452732,
+    "total_cpu_watts_package": 0.5919268861324253,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3296677864452732,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.5919268861324253,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 105.12099695205688,
+    "timestamp_absolute": 1757530903.992132,
+    "timestamp_iso": "2025-09-10T15:01:43.992132",
+    "total_cpu_watts_core": 0.42555236592020484,
+    "total_cpu_watts_package": 0.7712200146947591,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.42555236592020484,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7712200146947591,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 106.08683133125305,
+    "timestamp_absolute": 1757530904.9579663,
+    "timestamp_iso": "2025-09-10T15:01:44.957966",
+    "total_cpu_watts_core": 0.42555236592020484,
+    "total_cpu_watts_package": 0.7712200146947591,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.42555236592020484,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7712200146947591,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 107.14101481437683,
+    "timestamp_absolute": 1757530906.0121498,
+    "timestamp_iso": "2025-09-10T15:01:46.012150",
+    "total_cpu_watts_core": 0.3808074719578275,
+    "total_cpu_watts_package": 0.7158807729062662,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3808074719578275,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7158807729062662,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 108.08070945739746,
+    "timestamp_absolute": 1757530906.9518445,
+    "timestamp_iso": "2025-09-10T15:01:46.951844",
+    "total_cpu_watts_core": 0.3808074719578275,
+    "total_cpu_watts_package": 0.7158807729062662,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3808074719578275,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7158807729062662,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 109.11117815971375,
+    "timestamp_absolute": 1757530907.9823132,
+    "timestamp_iso": "2025-09-10T15:01:47.982313",
+    "total_cpu_watts_core": 0.3659566343716645,
+    "total_cpu_watts_package": 0.6358149828806893,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.3659566343716645,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6358149828806893,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 110.13368606567383,
+    "timestamp_absolute": 1757530909.004821,
+    "timestamp_iso": "2025-09-10T15:01:49.004821",
+    "total_cpu_watts_core": 0.507998697558015,
+    "total_cpu_watts_package": 0.889013252634851,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.507998697558015,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.889013252634851,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 111.081059217453,
+    "timestamp_absolute": 1757530909.9521942,
+    "timestamp_iso": "2025-09-10T15:01:49.952194",
+    "total_cpu_watts_core": 0.507998697558015,
+    "total_cpu_watts_package": 0.889013252634851,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.507998697558015,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.889013252634851,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 112.12076330184937,
+    "timestamp_absolute": 1757530910.9918983,
+    "timestamp_iso": "2025-09-10T15:01:50.991898",
+    "total_cpu_watts_core": 0.5140162297751328,
+    "total_cpu_watts_package": 0.9127931666414923,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5140162297751328,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9127931666414923,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 113.10301685333252,
+    "timestamp_absolute": 1757530911.9741518,
+    "timestamp_iso": "2025-09-10T15:01:51.974152",
+    "total_cpu_watts_core": 0.5140162297751328,
+    "total_cpu_watts_package": 0.9127931666414923,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5140162297751328,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9127931666414923,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 114.11002039909363,
+    "timestamp_absolute": 1757530912.9811554,
+    "timestamp_iso": "2025-09-10T15:01:52.981155",
+    "total_cpu_watts_core": 0.41513269632427746,
+    "total_cpu_watts_package": 0.7322443717519622,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.41513269632427746,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7322443717519622,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 115.13172507286072,
+    "timestamp_absolute": 1757530914.00286,
+    "timestamp_iso": "2025-09-10T15:01:54.002860",
+    "total_cpu_watts_core": 0.47668328376265756,
+    "total_cpu_watts_package": 0.8444968039539102,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.47668328376265756,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.8444968039539102,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 116.08537721633911,
+    "timestamp_absolute": 1757530914.9565122,
+    "timestamp_iso": "2025-09-10T15:01:54.956512",
+    "total_cpu_watts_core": 0.47668328376265756,
+    "total_cpu_watts_package": 0.8444968039539102,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.47668328376265756,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.8444968039539102,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 117.12960195541382,
+    "timestamp_absolute": 1757530916.000737,
+    "timestamp_iso": "2025-09-10T15:01:56.000737",
+    "total_cpu_watts_core": 0.43201122476288495,
+    "total_cpu_watts_package": 0.7729805820543769,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.43201122476288495,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7729805820543769,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 118.08332014083862,
+    "timestamp_absolute": 1757530916.9544551,
+    "timestamp_iso": "2025-09-10T15:01:56.954455",
+    "total_cpu_watts_core": 0.43201122476288495,
+    "total_cpu_watts_package": 0.7729805820543769,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.43201122476288495,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7729805820543769,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 119.10997915267944,
+    "timestamp_absolute": 1757530917.9811141,
+    "timestamp_iso": "2025-09-10T15:01:57.981114",
+    "total_cpu_watts_core": 0.4150879406552572,
+    "total_cpu_watts_package": 0.7282551014435671,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.4150879406552572,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7282551014435671,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 120.1248767375946,
+    "timestamp_absolute": 1757530918.9960117,
+    "timestamp_iso": "2025-09-10T15:01:58.996012",
+    "total_cpu_watts_core": 0.4267028206819769,
+    "total_cpu_watts_package": 0.7578715562018356,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.4267028206819769,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7578715562018356,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 121.09428668022156,
+    "timestamp_absolute": 1757530919.9654217,
+    "timestamp_iso": "2025-09-10T15:01:59.965422",
+    "total_cpu_watts_core": 0.4267028206819769,
+    "total_cpu_watts_package": 0.7578715562018356,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.4267028206819769,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7578715562018356,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 122.14207673072815,
+    "timestamp_absolute": 1757530921.0132117,
+    "timestamp_iso": "2025-09-10T15:02:01.013212",
+    "total_cpu_watts_core": 0.4982776643551133,
+    "total_cpu_watts_package": 0.8917338850641098,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.4982776643551133,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.8917338850641098,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 123.10800004005432,
+    "timestamp_absolute": 1757530921.979135,
+    "timestamp_iso": "2025-09-10T15:02:01.979135",
+    "total_cpu_watts_core": 0.4982776643551133,
+    "total_cpu_watts_package": 0.8917338850641098,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.4982776643551133,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.8917338850641098,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 124.14807915687561,
+    "timestamp_absolute": 1757530923.0192142,
+    "timestamp_iso": "2025-09-10T15:02:03.019214",
+    "total_cpu_watts_core": 0.40891844302336866,
+    "total_cpu_watts_package": 0.6889081327257686,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.40891844302336866,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.6889081327257686,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 125.16865682601929,
+    "timestamp_absolute": 1757530924.0397918,
+    "timestamp_iso": "2025-09-10T15:02:04.039792",
+    "total_cpu_watts_core": 0.7476900699151238,
+    "total_cpu_watts_package": 1.2972364823428189,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.7476900699151238,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.2972364823428189,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 126.0834596157074,
+    "timestamp_absolute": 1757530924.9545946,
+    "timestamp_iso": "2025-09-10T15:02:04.954595",
+    "total_cpu_watts_core": 0.7476900699151238,
+    "total_cpu_watts_package": 1.2972364823428189,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.7476900699151238,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.2972364823428189,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 127.11337924003601,
+    "timestamp_absolute": 1757530925.9845142,
+    "timestamp_iso": "2025-09-10T15:02:05.984514",
+    "total_cpu_watts_core": 0.5757654258808239,
+    "total_cpu_watts_package": 1.0096268417579657,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5757654258808239,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0096268417579657,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 128.09036087989807,
+    "timestamp_absolute": 1757530926.9614959,
+    "timestamp_iso": "2025-09-10T15:02:06.961496",
+    "total_cpu_watts_core": 0.5757654258808239,
+    "total_cpu_watts_package": 1.0096268417579657,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5757654258808239,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0096268417579657,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 129.12154126167297,
+    "timestamp_absolute": 1757530927.9926763,
+    "timestamp_iso": "2025-09-10T15:02:07.992676",
+    "total_cpu_watts_core": 0.4587102299138725,
+    "total_cpu_watts_package": 0.7960381402452078,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.4587102299138725,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7960381402452078,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 130.1269462108612,
+    "timestamp_absolute": 1757530928.9980812,
+    "timestamp_iso": "2025-09-10T15:02:08.998081",
+    "total_cpu_watts_core": 0.5369891775294318,
+    "total_cpu_watts_package": 0.923470165682978,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5369891775294318,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.923470165682978,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 131.0891809463501,
+    "timestamp_absolute": 1757530929.960316,
+    "timestamp_iso": "2025-09-10T15:02:09.960316",
+    "total_cpu_watts_core": 0.5369891775294318,
+    "total_cpu_watts_package": 0.923470165682978,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5369891775294318,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.923470165682978,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 132.1236743927002,
+    "timestamp_absolute": 1757530930.9948094,
+    "timestamp_iso": "2025-09-10T15:02:10.994809",
+    "total_cpu_watts_core": 0.585314184459722,
+    "total_cpu_watts_package": 1.0361821912402494,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.585314184459722,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0361821912402494,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 133.09603023529053,
+    "timestamp_absolute": 1757530931.9671652,
+    "timestamp_iso": "2025-09-10T15:02:11.967165",
+    "total_cpu_watts_core": 0.585314184459722,
+    "total_cpu_watts_package": 1.0361821912402494,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.585314184459722,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0361821912402494,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 134.11791515350342,
+    "timestamp_absolute": 1757530932.9890501,
+    "timestamp_iso": "2025-09-10T15:02:12.989050",
+    "total_cpu_watts_core": 0.4427391457921435,
+    "total_cpu_watts_package": 0.7702217332315299,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.4427391457921435,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.7702217332315299,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 135.13373184204102,
+    "timestamp_absolute": 1757530934.0048668,
+    "timestamp_iso": "2025-09-10T15:02:14.004867",
+    "total_cpu_watts_core": 0.5569885836640366,
+    "total_cpu_watts_package": 0.9555332296790522,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5569885836640366,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9555332296790522,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 136.0888876914978,
+    "timestamp_absolute": 1757530934.9600227,
+    "timestamp_iso": "2025-09-10T15:02:14.960023",
+    "total_cpu_watts_core": 0.5569885836640366,
+    "total_cpu_watts_package": 0.9555332296790522,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5569885836640366,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9555332296790522,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 137.12829756736755,
+    "timestamp_absolute": 1757530935.9994326,
+    "timestamp_iso": "2025-09-10T15:02:15.999433",
+    "total_cpu_watts_core": 0.5638578611384746,
+    "total_cpu_watts_package": 0.9817796841833967,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5638578611384746,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9817796841833967,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 138.10742092132568,
+    "timestamp_absolute": 1757530936.978556,
+    "timestamp_iso": "2025-09-10T15:02:16.978556",
+    "total_cpu_watts_core": 0.5638578611384746,
+    "total_cpu_watts_package": 0.9817796841833967,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5638578611384746,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9817796841833967,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 139.1052176952362,
+    "timestamp_absolute": 1757530937.9763527,
+    "timestamp_iso": "2025-09-10T15:02:17.976353",
+    "total_cpu_watts_core": 0.5193880663100543,
+    "total_cpu_watts_package": 0.8774687546248944,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5193880663100543,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.8774687546248944,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 140.0424566268921,
+    "timestamp_absolute": 1757530938.9135916,
+    "timestamp_iso": "2025-09-10T15:02:18.913592",
+    "total_cpu_watts_core": 0,
+    "total_cpu_watts_package": 0,
+    "vm_count": 0,
+    "vms": [],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 141.15675568580627,
+    "timestamp_absolute": 1757530940.0278907,
+    "timestamp_iso": "2025-09-10T15:02:20.027891",
+    "total_cpu_watts_core": 0.6536385619689548,
+    "total_cpu_watts_package": 1.1132605417482366,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6536385619689548,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.1132605417482366,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 142.11750316619873,
+    "timestamp_absolute": 1757530940.9886382,
+    "timestamp_iso": "2025-09-10T15:02:20.988638",
+    "total_cpu_watts_core": 0.6536385619689548,
+    "total_cpu_watts_package": 1.1132605417482366,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6536385619689548,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.1132605417482366,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 143.13907051086426,
+    "timestamp_absolute": 1757530942.0102055,
+    "timestamp_iso": "2025-09-10T15:02:22.010206",
+    "total_cpu_watts_core": 0.5456517242661544,
+    "total_cpu_watts_package": 0.9343001690025318,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5456517242661544,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9343001690025318,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 144.13583946228027,
+    "timestamp_absolute": 1757530943.0069745,
+    "timestamp_iso": "2025-09-10T15:02:23.006974",
+    "total_cpu_watts_core": 0.5456517242661544,
+    "total_cpu_watts_package": 0.9343001690025318,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5456517242661544,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9343001690025318,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 145.1287202835083,
+    "timestamp_absolute": 1757530943.9998553,
+    "timestamp_iso": "2025-09-10T15:02:23.999855",
+    "total_cpu_watts_core": 0.6463411548730776,
+    "total_cpu_watts_package": 1.0980291527588084,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6463411548730776,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0980291527588084,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 146.08024549484253,
+    "timestamp_absolute": 1757530944.9513805,
+    "timestamp_iso": "2025-09-10T15:02:24.951380",
+    "total_cpu_watts_core": 0.6463411548730776,
+    "total_cpu_watts_package": 1.0980291527588084,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6463411548730776,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0980291527588084,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 147.13902068138123,
+    "timestamp_absolute": 1757530946.0101557,
+    "timestamp_iso": "2025-09-10T15:02:26.010156",
+    "total_cpu_watts_core": 0.6462596194610118,
+    "total_cpu_watts_package": 1.1051346904640913,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6462596194610118,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.1051346904640913,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 148.09220027923584,
+    "timestamp_absolute": 1757530946.9633353,
+    "timestamp_iso": "2025-09-10T15:02:26.963335",
+    "total_cpu_watts_core": 0.6462596194610118,
+    "total_cpu_watts_package": 1.1051346904640913,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6462596194610118,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.1051346904640913,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 149.10772681236267,
+    "timestamp_absolute": 1757530947.9788618,
+    "timestamp_iso": "2025-09-10T15:02:27.978862",
+    "total_cpu_watts_core": 0.5456252913686045,
+    "total_cpu_watts_package": 0.9278868472002332,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.5456252913686045,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9278868472002332,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 150.1146388053894,
+    "timestamp_absolute": 1757530948.9857738,
+    "timestamp_iso": "2025-09-10T15:02:28.985774",
+    "total_cpu_watts_core": 0.6118772982506487,
+    "total_cpu_watts_package": 1.0395413733555985,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6118772982506487,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0395413733555985,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 151.09261417388916,
+    "timestamp_absolute": 1757530949.9637492,
+    "timestamp_iso": "2025-09-10T15:02:29.963749",
+    "total_cpu_watts_core": 0.6118772982506487,
+    "total_cpu_watts_package": 1.0395413733555985,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6118772982506487,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0395413733555985,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 152.16036891937256,
+    "timestamp_absolute": 1757530951.031504,
+    "timestamp_iso": "2025-09-10T15:02:31.031504",
+    "total_cpu_watts_core": 0.586326647775415,
+    "total_cpu_watts_package": 0.9823574154005071,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.586326647775415,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9823574154005071,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 153.10580325126648,
+    "timestamp_absolute": 1757530951.9769382,
+    "timestamp_iso": "2025-09-10T15:02:31.976938",
+    "total_cpu_watts_core": 0.586326647775415,
+    "total_cpu_watts_package": 0.9823574154005071,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.586326647775415,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 0.9823574154005071,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 154.1093258857727,
+    "timestamp_absolute": 1757530952.980461,
+    "timestamp_iso": "2025-09-10T15:02:32.980461",
+    "total_cpu_watts_core": 0.6342445491343788,
+    "total_cpu_watts_package": 1.0432746344027026,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6342445491343788,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0432746344027026,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 155.141587972641,
+    "timestamp_absolute": 1757530954.012723,
+    "timestamp_iso": "2025-09-10T15:02:34.012723",
+    "total_cpu_watts_core": 0.796433683788104,
+    "total_cpu_watts_package": 1.3287805974475266,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.796433683788104,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.3287805974475266,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 156.1006829738617,
+    "timestamp_absolute": 1757530954.971818,
+    "timestamp_iso": "2025-09-10T15:02:34.971818",
+    "total_cpu_watts_core": 0.796433683788104,
+    "total_cpu_watts_package": 1.3287805974475266,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.796433683788104,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.3287805974475266,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 157.1310577392578,
+    "timestamp_absolute": 1757530956.0021927,
+    "timestamp_iso": "2025-09-10T15:02:36.002193",
+    "total_cpu_watts_core": 0.7499752144654641,
+    "total_cpu_watts_package": 1.2456819567020054,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.7499752144654641,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.2456819567020054,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 158.0850760936737,
+    "timestamp_absolute": 1757530956.956211,
+    "timestamp_iso": "2025-09-10T15:02:36.956211",
+    "total_cpu_watts_core": 0.7499752144654641,
+    "total_cpu_watts_package": 1.2456819567020054,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.7499752144654641,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.2456819567020054,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 159.12797784805298,
+    "timestamp_absolute": 1757530957.9991128,
+    "timestamp_iso": "2025-09-10T15:02:37.999113",
+    "total_cpu_watts_core": 0.6339931129317619,
+    "total_cpu_watts_package": 1.0558161012148628,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6339931129317619,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0558161012148628,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 160.141530752182,
+    "timestamp_absolute": 1757530959.0126657,
+    "timestamp_iso": "2025-09-10T15:02:39.012666",
+    "total_cpu_watts_core": 0.69488056199258,
+    "total_cpu_watts_package": 1.1649306980826661,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.69488056199258,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.1649306980826661,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 161.09381675720215,
+    "timestamp_absolute": 1757530959.9649518,
+    "timestamp_iso": "2025-09-10T15:02:39.964952",
+    "total_cpu_watts_core": 0.69488056199258,
+    "total_cpu_watts_package": 1.1649306980826661,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.69488056199258,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.1649306980826661,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 162.14851140975952,
+    "timestamp_absolute": 1757530961.0196464,
+    "timestamp_iso": "2025-09-10T15:02:41.019646",
+    "total_cpu_watts_core": 0.651953612157401,
+    "total_cpu_watts_package": 1.0716118231964928,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.651953612157401,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0716118231964928,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 163.1236252784729,
+    "timestamp_absolute": 1757530961.9947603,
+    "timestamp_iso": "2025-09-10T15:02:41.994760",
+    "total_cpu_watts_core": 0.651953612157401,
+    "total_cpu_watts_package": 1.0716118231964928,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.651953612157401,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0716118231964928,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 164.1667878627777,
+    "timestamp_absolute": 1757530963.0379229,
+    "timestamp_iso": "2025-09-10T15:02:43.037923",
+    "total_cpu_watts_core": 0.6692775632361625,
+    "total_cpu_watts_package": 1.0697992919234938,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6692775632361625,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0697992919234938,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 165.1496820449829,
+    "timestamp_absolute": 1757530964.020817,
+    "timestamp_iso": "2025-09-10T15:02:44.020817",
+    "total_cpu_watts_core": 0.9169947929698592,
+    "total_cpu_watts_package": 1.4861885681327436,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9169947929698592,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.4861885681327436,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 166.11272835731506,
+    "timestamp_absolute": 1757530964.9838634,
+    "timestamp_iso": "2025-09-10T15:02:44.983863",
+    "total_cpu_watts_core": 0.9169947929698592,
+    "total_cpu_watts_package": 1.4861885681327436,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9169947929698592,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.4861885681327436,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 167.19425010681152,
+    "timestamp_absolute": 1757530966.065385,
+    "timestamp_iso": "2025-09-10T15:02:46.065385",
+    "total_cpu_watts_core": 0.7949968235275511,
+    "total_cpu_watts_package": 1.2842343093616322,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.7949968235275511,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.2842343093616322,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 168.10249876976013,
+    "timestamp_absolute": 1757530966.9736338,
+    "timestamp_iso": "2025-09-10T15:02:46.973634",
+    "total_cpu_watts_core": 0.7949968235275511,
+    "total_cpu_watts_package": 1.2842343093616322,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.7949968235275511,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.2842343093616322,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 169.23556518554688,
+    "timestamp_absolute": 1757530968.1067002,
+    "timestamp_iso": "2025-09-10T15:02:48.106700",
+    "total_cpu_watts_core": 0.8834249850435544,
+    "total_cpu_watts_package": 1.436363619280401,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8834249850435544,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.436363619280401,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 170.13229870796204,
+    "timestamp_absolute": 1757530969.0034337,
+    "timestamp_iso": "2025-09-10T15:02:49.003434",
+    "total_cpu_watts_core": 0.8632940026917844,
+    "total_cpu_watts_package": 1.4562355233855904,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8632940026917844,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.4562355233855904,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 171.09460759162903,
+    "timestamp_absolute": 1757530969.9657426,
+    "timestamp_iso": "2025-09-10T15:02:49.965743",
+    "total_cpu_watts_core": 0.8632940026917844,
+    "total_cpu_watts_package": 1.4562355233855904,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8632940026917844,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.4562355233855904,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 172.16543340682983,
+    "timestamp_absolute": 1757530971.0365684,
+    "timestamp_iso": "2025-09-10T15:02:51.036568",
+    "total_cpu_watts_core": 1.1137740303410495,
+    "total_cpu_watts_package": 1.8340457643490338,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 1.1137740303410495,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.8340457643490338,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 173.12418127059937,
+    "timestamp_absolute": 1757530971.9953163,
+    "timestamp_iso": "2025-09-10T15:02:51.995316",
+    "total_cpu_watts_core": 1.1137740303410495,
+    "total_cpu_watts_package": 1.8340457643490338,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 1.1137740303410495,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.8340457643490338,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 174.1451382637024,
+    "timestamp_absolute": 1757530973.0162733,
+    "timestamp_iso": "2025-09-10T15:02:53.016273",
+    "total_cpu_watts_core": 0.6673925413227217,
+    "total_cpu_watts_package": 1.0904819933055576,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6673925413227217,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0904819933055576,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 175.10456466674805,
+    "timestamp_absolute": 1757530973.9756997,
+    "timestamp_iso": "2025-09-10T15:02:53.975700",
+    "total_cpu_watts_core": 0.6673925413227217,
+    "total_cpu_watts_package": 1.0904819933055576,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.6673925413227217,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.0904819933055576,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 176.15000677108765,
+    "timestamp_absolute": 1757530975.0211418,
+    "timestamp_iso": "2025-09-10T15:02:55.021142",
+    "total_cpu_watts_core": 0.9903209797373902,
+    "total_cpu_watts_package": 1.593860259022669,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9903209797373902,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.593860259022669,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 177.09610772132874,
+    "timestamp_absolute": 1757530975.9672427,
+    "timestamp_iso": "2025-09-10T15:02:55.967243",
+    "total_cpu_watts_core": 0.9903209797373902,
+    "total_cpu_watts_package": 1.593860259022669,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9903209797373902,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.593860259022669,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 178.1838185787201,
+    "timestamp_absolute": 1757530977.0549536,
+    "timestamp_iso": "2025-09-10T15:02:57.054954",
+    "total_cpu_watts_core": 0.8425045415043699,
+    "total_cpu_watts_package": 1.3660294919268865,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8425045415043699,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.3660294919268865,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 179.11793875694275,
+    "timestamp_absolute": 1757530977.9890738,
+    "timestamp_iso": "2025-09-10T15:02:57.989074",
+    "total_cpu_watts_core": 0.8425045415043699,
+    "total_cpu_watts_package": 1.3660294919268865,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8425045415043699,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.3660294919268865,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 180.1526758670807,
+    "timestamp_absolute": 1757530979.0238109,
+    "timestamp_iso": "2025-09-10T15:02:59.023811",
+    "total_cpu_watts_core": 0.8391791950876092,
+    "total_cpu_watts_package": 1.3507723994918985,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8391791950876092,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.3507723994918985,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 181.10808444023132,
+    "timestamp_absolute": 1757530979.9792194,
+    "timestamp_iso": "2025-09-10T15:02:59.979219",
+    "total_cpu_watts_core": 0.8391791950876092,
+    "total_cpu_watts_package": 1.3507723994918985,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8391791950876092,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.3507723994918985,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 182.14548134803772,
+    "timestamp_absolute": 1757530981.0166163,
+    "timestamp_iso": "2025-09-10T15:03:01.016616",
+    "total_cpu_watts_core": 0.8258388213459333,
+    "total_cpu_watts_package": 1.3086525172151282,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8258388213459333,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.3086525172151282,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 183.11200594902039,
+    "timestamp_absolute": 1757530981.983141,
+    "timestamp_iso": "2025-09-10T15:03:01.983141",
+    "total_cpu_watts_core": 0.8258388213459333,
+    "total_cpu_watts_package": 1.3086525172151282,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8258388213459333,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.3086525172151282,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 184.16648983955383,
+    "timestamp_absolute": 1757530983.0376248,
+    "timestamp_iso": "2025-09-10T15:03:03.037625",
+    "total_cpu_watts_core": 0.9415445520591568,
+    "total_cpu_watts_package": 1.4646643512130906,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9415445520591568,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.4646643512130906,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 185.11198568344116,
+    "timestamp_absolute": 1757530983.9831207,
+    "timestamp_iso": "2025-09-10T15:03:03.983121",
+    "total_cpu_watts_core": 0.9415445520591568,
+    "total_cpu_watts_package": 1.4646643512130906,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9415445520591568,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.4646643512130906,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 186.13941383361816,
+    "timestamp_absolute": 1757530985.0105488,
+    "timestamp_iso": "2025-09-10T15:03:05.010549",
+    "total_cpu_watts_core": 1.1920177761319684,
+    "total_cpu_watts_package": 1.8867774917677045,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 1.1920177761319684,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.8867774917677045,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 187.11025190353394,
+    "timestamp_absolute": 1757530985.981387,
+    "timestamp_iso": "2025-09-10T15:03:05.981387",
+    "total_cpu_watts_core": 1.1920177761319684,
+    "total_cpu_watts_package": 1.8867774917677045,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 1.1920177761319684,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.8867774917677045,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 188.15599393844604,
+    "timestamp_absolute": 1757530987.027129,
+    "timestamp_iso": "2025-09-10T15:03:07.027129",
+    "total_cpu_watts_core": 0.9727904742678062,
+    "total_cpu_watts_package": 1.5716361618318324,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9727904742678062,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.5716361618318324,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 189.11359858512878,
+    "timestamp_absolute": 1757530987.9847336,
+    "timestamp_iso": "2025-09-10T15:03:07.984734",
+    "total_cpu_watts_core": 0.9727904742678062,
+    "total_cpu_watts_package": 1.5716361618318324,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9727904742678062,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.5716361618318324,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 190.11561107635498,
+    "timestamp_absolute": 1757530988.986746,
+    "timestamp_iso": "2025-09-10T15:03:08.986746",
+    "total_cpu_watts_core": 1.104233530783405,
+    "total_cpu_watts_package": 1.7982450326018802,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 1.104233530783405,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.7982450326018802,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 191.10048627853394,
+    "timestamp_absolute": 1757530989.9716213,
+    "timestamp_iso": "2025-09-10T15:03:09.971621",
+    "total_cpu_watts_core": 1.104233530783405,
+    "total_cpu_watts_package": 1.7982450326018802,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 1.104233530783405,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.7982450326018802,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 192.13206887245178,
+    "timestamp_absolute": 1757530991.0032039,
+    "timestamp_iso": "2025-09-10T15:03:11.003204",
+    "total_cpu_watts_core": 0.8963787871724509,
+    "total_cpu_watts_package": 1.446283440820059,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8963787871724509,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.446283440820059,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 193.12956428527832,
+    "timestamp_absolute": 1757530992.0006993,
+    "timestamp_iso": "2025-09-10T15:03:12.000699",
+    "total_cpu_watts_core": 0.8963787871724509,
+    "total_cpu_watts_package": 1.446283440820059,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8963787871724509,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.446283440820059,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 194.16943502426147,
+    "timestamp_absolute": 1757530993.04057,
+    "timestamp_iso": "2025-09-10T15:03:13.040570",
+    "total_cpu_watts_core": 0.8482653710887844,
+    "total_cpu_watts_package": 1.365029066464051,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8482653710887844,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.365029066464051,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 195.10323429107666,
+    "timestamp_absolute": 1757530993.9743693,
+    "timestamp_iso": "2025-09-10T15:03:13.974369",
+    "total_cpu_watts_core": 0.8482653710887844,
+    "total_cpu_watts_package": 1.365029066464051,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8482653710887844,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.365029066464051,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 196.14511680603027,
+    "timestamp_absolute": 1757530995.0162518,
+    "timestamp_iso": "2025-09-10T15:03:15.016252",
+    "total_cpu_watts_core": 0.9418958563150936,
+    "total_cpu_watts_package": 1.528446607028545,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9418958563150936,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.528446607028545,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 197.09446239471436,
+    "timestamp_absolute": 1757530995.9655974,
+    "timestamp_iso": "2025-09-10T15:03:15.965597",
+    "total_cpu_watts_core": 0.9418958563150936,
+    "total_cpu_watts_package": 1.528446607028545,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.9418958563150936,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.528446607028545,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 198.13448667526245,
+    "timestamp_absolute": 1757530997.0056217,
+    "timestamp_iso": "2025-09-10T15:03:17.005622",
+    "total_cpu_watts_core": 0.8845124287335719,
+    "total_cpu_watts_package": 1.4388322868445238,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8845124287335719,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.4388322868445238,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  },
+  {
+    "timestamp": 199.12666940689087,
+    "timestamp_absolute": 1757530997.9978044,
+    "timestamp_iso": "2025-09-10T15:03:17.997804",
+    "total_cpu_watts_core": 0.8845124287335719,
+    "total_cpu_watts_package": 1.4388322868445238,
+    "vm_count": 1,
+    "vms": [
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "core",
+        "watts": 0.8845124287335719,
+        "state": "running"
+      },
+      {
+        "vm_id": "41d3e5cd-8092-47cf-a365-4906653eeee0",
+        "vm_name": "fedora40",
+        "hypervisor": "kvm",
+        "node_name": "kind-control-plane",
+        "zone": "package",
+        "watts": 1.4388322868445238,
+        "state": "running"
+      }
+    ],
+    "collection_interval": 1.0,
+    "kepler_endpoint": "http://localhost:28283/metrics",
+    "vm_filter": "{'fedora40'}"
+  }
+]
