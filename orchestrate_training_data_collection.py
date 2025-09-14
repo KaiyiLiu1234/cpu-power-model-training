@@ -371,8 +371,8 @@ class TrainingDataOrchestrator:
             # 5. Start all collection processes with synchronized timing
             logger.info("Starting synchronized collection processes...")
             
-            # Calculate synchronized start time (5 seconds from now to allow setup)
-            sync_start_time = time.time() + 5.0
+            # Calculate synchronized start time (10 seconds from now to allow setup)
+            sync_start_time = time.time() + 10.0
             logger.info(f"Synchronized collection will start at: {sync_start_time:.6f} ({datetime.fromtimestamp(sync_start_time).isoformat()})")
             
             # Start VM feature collection with sync time
@@ -385,10 +385,13 @@ class TrainingDataOrchestrator:
             
             logger.info(f"All processes started - they will run for {duration}s and finish automatically")
             
-            # Wait for the expected collection duration plus a small buffer
+            # Wait for the expected collection duration plus a proportional buffer
             # Both VM and BM collectors should finish around the same time now
-            collection_timeout = duration + 10  # Allow 10 seconds buffer
-            logger.info(f"Waiting {collection_timeout}s for data collection to complete...")
+            # Use larger buffer for longer collections to account for file I/O overhead
+            min_buffer = 10  # Minimum 10 seconds
+            proportional_buffer = max(min_buffer, duration * 0.05)  # 5% of duration or 10s, whichever is larger
+            collection_timeout = duration + proportional_buffer
+            logger.info(f"Waiting {collection_timeout:.1f}s for data collection to complete (duration: {duration}s + buffer: {proportional_buffer:.1f}s)...")
             
             if self.bm_power_process:
                 try:
